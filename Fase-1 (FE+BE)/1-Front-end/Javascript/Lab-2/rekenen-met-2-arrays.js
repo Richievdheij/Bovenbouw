@@ -1,38 +1,81 @@
-var arrayEen = [1,2,3,4,5,6,7,8,9,10];
-var arrayTwee = [2,4,6,8,10,12,14,16,18,20];
+// var result = document.getElementById("h3");
 
-document.write("<h1>Array operatoren</h1>");
-document.write(arrayEen.join(", "));
 
-function optellen(arrayEen, arrayTwee) {
-    var result = [];
-    for (var i = 0; i < arrayEen.length; i++) {
-      result.push(arrayEen[i] + arrayTwee[i]);
+// function optellen(array1, array2) {
+//   document.getElementById("h3").innerHTML = "hallo";
+//     let resultaat = [];
+//     for (let i = 0; i < array1.length; i++) {
+//         resultaat.push(array1[i] + array2[i]);
+//     }
+//     result.innerHTML = resultaat;
+// }
+
+// function aftrekken(array1, array2) {
+//     let resultaat = [];
+//     for (let i = 0; i < array1.length; i++) {
+//         resultaat.push(array1[i] - array2[i]);
+//     }
+//     result.innerHTML = resultaat;
+// }
+
+// function vermenigvuldigen(array1, array2) {
+//     let resultaat = [];
+//     for (let i = 0; i < array1.length; i++) {
+//         resultaat.push(array1[i] * array2[i]);
+//     }
+//     result.innerHTML = resultaat;
+// }
+
+// function delen(array1, array2) {
+//     let resultaat = [];
+//     for (let i = 0; i < array1.length; i++) {
+//         resultaat.push(array1[i] / array2[i]);
+//     }
+//     result.innerHTML = resultaat;
+// }
+
+// console.log("Optellen:", optellen(arrayEen, arrayTwee));
+// console.log("Aftrekken:", aftrekken(arrayEen, arrayTwee));
+// console.log("Vermenigvuldigen:", vermenigvuldigen(arrayEen, arrayTwee));
+// console.log("Delen:", delen(arrayEen, arrayTwee));
+
+var rekenOptellen = document.getElementById("optellen").innerText = "hallo wereld";
+
+document.getElementById("optellen").innerText = "hallo wereld";
+
+function optellen(array1, array2) {
+    let resultaat = [];
+    for (let i = 0; i < array1.length; i++) {
+        resultaat.push(array1[i] + array2[i]);
     }
-    console.log(result);
-  }
-  
-  function aftrekken(arrayEen, arrayTwee) {
-    var result = [];
-    for (var i = 0; i < arrayEen.length; i++) {
-      result.push(arrayEen[i] - arrayTwee[i]);
+    result.innerHTML = resultaat;
+}
+
+function aftrekken(array1, array2) {
+    let resultaat = [];
+    for (let i = 0; i < array1.length; i++) {
+        resultaat.push(array1[i] - array2[i]);
     }
-    console.log(result);
-  }
-  
-  function vermenigvuldigen(arrayEen, arrayTwee) {
-    var result = [];
-    for (var i = 0; i < arrayEen.length; i++) {
-      result.push(arrayEen[i] * arrayTwee[i]);
+    result.innerHTML = resultaat;
+}
+
+function vermenigvuldigen(array1, array2) {
+    let resultaat = [];
+    for (let i = 0; i < array1.length; i++) {
+        resultaat.push(array1[i] * array2[i]);
     }
-    console.log(result);
-  }
-  
-  function delen(arrayEen, arrayTwee) {
-    var result = [];
-    for (var i = 0; i < arrayEen.length; i++) {
-      result.push(arrayEen[i] / arrayTwee[i]);
+    result.innerHTML = resultaat;
+}
+
+function delen(array1, array2) {
+    let resultaat = [];
+    for (let i = 0; i < array1.length; i++) {
+        resultaat.push(array1[i] / array2[i]);
     }
-    console.log(result);
-  }
-  
+    result.innerHTML = resultaat;
+}
+
+console.log("Optellen:", optellen(arrayEen, arrayTwee));
+console.log("Aftrekken:", aftrekken(arrayEen, arrayTwee));
+console.log("Vermenigvuldigen:", vermenigvuldigen(arrayEen, arrayTwee));
+console.log("Delen:", delen(arrayEen, arrayTwee));
