@@ -1,0 +1,62 @@
+body {
+    padding: 10px;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navmenu {
+    border: 2px solid;
+    display: flex;
+    border-bottom: 0px;
+}
+
+main {
+
+}
+
+.elden {
+    border: 2px solid;
+    padding: 10px;
+}
+
+.ratings {
+    float: right;
+    border: 2px solid;
+    padding: 10px;
+}
+
+.ratingsmenu {
+    
+}
+
+.genres {
+    display: flex;
+    border: 2px solid;
+}
+
+.screenshotmenu {
+
+}
+
+img {
+    width: 70%;
+    height: auto;
+    padding: 10px;
+    border: 2px solid;
+}
+
+.screenshots {
+    width: 25%;
+    height: 25%;
+    display: flex;
+}
+
+.systeemeisenmenu {
+    border: 2px solid;
+    padding: 10px;
+}
+
+.recensiesmenu {
+    border: 2px solid;
+    padding: 10px;
+}
