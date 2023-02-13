@@ -31,7 +31,21 @@ main {
 
 .genres {
     display: flex;
+}
+
+.genre1 {
     border: 2px solid;
+    padding: 10px;
+}
+
+.genre2 {
+    border: 2px solid;
+    padding: 10px;
+}
+
+.genre3 {
+    border: 2px solid;
+    padding: 10px;
 }
 
 .screenshotmenu {
