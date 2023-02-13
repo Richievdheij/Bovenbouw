@@ -1,0 +1,25 @@
+Vanuit deze opdracht moesten we een normaal werkend website maken waarbij we de basisstof beheersen.
+Met minimale specificaties, bijvoorbeeld:
+- Headers
+- Nav buttons
+- En grid, flex styling
+- Overzicht inzien
+
+Leerde hier de volgende elementen:
+-doctype
+-html
+-head met belangrijke meta-tags (description en keywords)
+-body
+-nav
+-header
+-main
+-footer
+-anchor
+-section
+-article
+-paragraph
+-image
+-unordered list
+-ordered list
+-headings (1-3)
+-button
