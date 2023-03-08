@@ -36,3 +36,8 @@ delen(arrayTwee, arrayEen);
 Maak een array aan waarin de volgende tafels zitten: 2, 4, 6 en 8. De uitvoer naar het scherm wordt dan: Array met tafels.pdf
 
 Als je in de array andere getallen zet dan worden die tafels naar het scherm geschreven. Je weet dus van te voren niet hoeveel getallen er in de array zitten en ook niet welke getallen.
+
+# Javascript / Lab 2 - Piramide oplopend
+Je vraagt aan de gebruiker via een prompt 'Voer een getal in:'.
+
+Maak eerst een array aan waarin je de getallen 1 t/m 20 toevoegd (als de invoer 20 is). Vervolgens ga je met behulp van de array de oplopende pyramide naar het scherm printen.
