@@ -52,17 +52,7 @@ main {
     gap: 1em;
 }
 
-.genre1 {
-    border: 2px solid;
-    padding: 10px;
-}
-
-.genre2 {
-    border: 2px solid;
-    padding: 10px;
-}
-
-.genre3 {
+.genre1 .genre2 .genre3 {
     border: 2px solid;
     padding: 10px;
 }
