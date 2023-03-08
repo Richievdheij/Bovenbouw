@@ -31,3 +31,8 @@ optellen(arrayEen, arrayTwee);
 aftrekken(arrayTwee, arrayEen);
 vermenigvuldigen(arrayEen, arrayTwee);
 delen(arrayTwee, arrayEen);
+
+# Javascript / Lab 2 - Array met tafels 
+Maak een array aan waarin de volgende tafels zitten: 2, 4, 6 en 8. De uitvoer naar het scherm wordt dan: Array met tafels.pdf
+
+Als je in de array andere getallen zet dan worden die tafels naar het scherm geschreven. Je weet dus van te voren niet hoeveel getallen er in de array zitten en ook niet welke getallen.
