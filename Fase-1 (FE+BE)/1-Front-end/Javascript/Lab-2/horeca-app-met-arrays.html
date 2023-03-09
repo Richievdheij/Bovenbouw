@@ -2,22 +2,24 @@
 <html lang="nl">
 <head>
    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-   <title>Lab 2 - Piramide oplopend</title>
+   <title>Lab 2 - Horeca app met arrays</title>
 </head>
 <body>
-  <h1>Lab 2 - Piramide oplopend</h1>
+  <h1>Lab 2 - Horeca app met arrays</h1>
 
 <script>
-  array = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
-  var aantal = prompt("Geef een getal in");
-  var piramide = "";
-  for (var i = 1; i <= aantal; i++) {
-    for (var j = 1; j <= i; j++) {
-      piramide += (array[j] + " ");
-    }
-    piramide += "<br>";
-  }
-  document.write(piramide);
+
+// Aanmaken van een associative array met ijsjes waar aantal van alle ijsjes op 0 wordt gezet.
+var aantalSmaken = {aardbei:0, banaan:0, chocolade:0, vanille:0};
+
+// Aanmaken van een associative array met prijzen van ijsjes.
+var prijzenSmaken = {aardbei:1.25, banaan:1.25, chocolade:1.25, vanille:1.25};
+
+
+
+
+
 </script>
  </body>
 </html>
+
