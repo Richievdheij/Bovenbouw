@@ -46,3 +46,21 @@ Maak eerst een array aan waarin je de getallen 1 t/m 20 toevoegd (als de invoer 
 Je vraagt aan de gebruiker via een prompt 'Voer een getal in:'.
 
 Maak eerst een array aan waarin je de getallen 1 t/m 20 toevoegd (als de invoer 20 is). Vervolgens ga je met behulp van de array de aflopende pyramide naar het scherm printen.
+
+# Javascript / Lab 2 - Horeca app met arrays
+In jaar 1 heb je een horeca app gemaakt (ijssalon Papi Gelato). Je hebt hier veel variabelen gebruikt om bij te houden hoeveel ijsjes en bolletjes je hebt besteld en ook alle prijzen heb je vastgelegd in constantes of variabelen.
+
+Is het handig om voor elk ijsje of smaak een aparte variabele te hebben die het aantal bijhoud?
+Of zou dit ook opgelost kunnen worden met een array? Wat is het voordeel van een array?
+ 
+Je maakt een kopie van je Papi Gelato bestanden en je gaat deze ombouwen naar een array oplossing. Dus het bijhouden van het aantal Bolletjes, hoorntjes of bakjes etc. en prijzen ga je oplossen met behulp van arrays.
+
+In JavaScript kun je niet echt spreken van Associative Arrays, feitelijk is dit een object, maar je gaat de Papi Gelato app wel ombouwen zodat het lijkt op Associative Arrays.
+
+Wat is het voordeel van een associative Array ten opzichte van een array met numbered indexes?
+var cars = ['Saab', 'Volvo', 'BMW']; // array numbered indexed
+
+Aanmaken van een associative array met auto's waar aantal van alle auto's op 0 wordt gezet.
+var cars = {saab:0, volvo:0, bmw:0};
+
+cars['saab'] = 2; // aantal van saab wordt 2 gemaakt.
