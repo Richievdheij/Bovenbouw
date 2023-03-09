@@ -1,13 +1,3 @@
-# Javascript / Lab 1 Fibonacci reeks
-In deze labopdracht ga jij een applicatie bouwen in javascript die de eerste 20 getallen uit de getallenreeks berekent en op het scherm toont. Hierbij maak je gebruik van de kennis die je hebt opgedaan over de afgelopen paar weken.
-
-Je maakt in de uitwerking ten minste gebruik van de volgende onderdelen:
-- Variabelen
-- Loops
-- Functions
-- Parameters
-- Returnwaarden
-
 # Javascript / Lab 2 Opdracht 1: Array met dagen
 Maak een array aan waarin de dagen van de week zitten: maandag t/m zondag. De volgende uitvoer laat je op je scherm zien waarbij je gebruik moet maken van het 'aanspreken' van de array met de dagen die je hebt aangemaakt.
 
@@ -64,20 +54,3 @@ Aanmaken van een associative array met auto's waar aantal van alle auto's op 0 w
 var cars = {saab:0, volvo:0, bmw:0};
 
 cars['saab'] = 2; // aantal van saab wordt 2 gemaakt.
-
-# Javascript / Lab 3 - Buttons
-Maak het volgende ontwerp na en zorg ervoor dat je middels JavaScript de HTML toevoegt aan de pagina. Het enige wat je binnen de body mag hebben als HTML code is:
-
-<body class="bgc">
-    <div id="container"></div>
-    <script src="script.js"></script>
- </body>
-
-De applicatie voldoet aan de volgende eisen:
-
-- Panel met buttons is gecentreerd in de pagina en de achtergrondkleur is wit
-- Bij het opstarten is de achtergrondkleur van de pagina grijs
-- Er zitten 3 buttons in het panel met de kleuren groen, rood en blauw
-- Als je op button 1 (groen) klikt wordt de achtergrondkleur van de pagina groen
-- Als je op button 2 (rood) klikt wordt de achtergrondkleur van de pagina rood
-- Als je op button 3 (blauw) klikt wordt de achtergrondkleur van de pagina blauw
