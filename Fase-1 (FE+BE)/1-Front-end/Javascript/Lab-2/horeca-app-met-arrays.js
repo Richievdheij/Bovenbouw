@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-   <title>Lab 2 - Horeca app met arrays</title>
-</head>
-<body>
-  <h1>Lab 2 - Horeca app met arrays</h1>
-
-<script>
-
 // Create an array to keep track of the amount of flavors
 const flavours = ["Aardbei", "Chocolade", "Vanille"];
 
@@ -150,8 +139,3 @@ while (flavour_choosing) {
 }
 }
 }
-
-</script>
- </body>
-</html>
-
