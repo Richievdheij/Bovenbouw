@@ -9,20 +9,18 @@ let buttonColor = "green";
 
 // Maak een for loop aan om de kleur van de knoppen te veranderen wanneer erop wordt geklikt:
 function changeColor() {
+const buttonColor = this.style.backgroundColor;
+
   if (buttonColor === "green") {
     this.style.backgroundColor = "red";
-    buttonColor = "red";
   } else if (buttonColor === "red") {
     this.style.backgroundColor = "purple";
-    buttonColor = "purple";
   } else if (buttonColor === "purple") {
     this.style.backgroundColor = "blue";
-    buttonColor = "blue";
   } else if (buttonColor === "blue") {
     this.style.backgroundColor = "black";
-    buttonColor = "black";
   } else {
-    this.style.display = "none";
+    this.style.visibility = "hidden";
   }
 }
 
