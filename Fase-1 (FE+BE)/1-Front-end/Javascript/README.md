@@ -108,7 +108,7 @@ Na 3 x klikken wordt de kleur van de button blauw (zie button 4)
 Na 4 x klikken wordt de kleur van de button zwart (zie button 5)
 Na 5 x klikken verdwijnt de button. De button is dus niet meer aanwezig in de DOM!
 
-# Javascript / Lab 3 - Zelf de kleuren kunnen instellen
+# Javascript / Lab 4 - Zelf de kleuren kunnen instellen
 Misschien heb je dit bij opdracht 2 al zo opgelost... Maar de uitbreiding/aanpassing die je moet maken op basis van opdracht 2 is het volgende:
 
 - je moet zelf in code kunnen aangeven welke kleuren de buttons worden (de startkleur blijft voor alle buttons groen)
