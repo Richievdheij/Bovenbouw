@@ -29,3 +29,14 @@ De applicatie voldoet aan de volgende eisen:
 - Per rij zijn er 5 buttons aanwezig
 - Het aantal buttons kun je in de JS code opgeven als variabele, bijvoorbeeld: 10, 15, 20, 25, ... In dit geval zijn er 30 buttons aanwezig
 - Elke keer als je op een groene button klikt wordt de kleur rood
+
+# Javascript / Lab 3 - Verschillende kleuren
+De applicatie voldoet aan de volgende eisen:
+
+Maak het ontwerp exact na (dit heb je in opdracht 1 al gedaan)
+Standaard zijn alle buttons groen (0 x klikken)
+Na 1 x klikken wordt de kleur van de button rood (zie button 2)
+Na 2 x klikken wordt de kleur van de button paars (zie button 3)
+Na 3 x klikken wordt de kleur van de button blauw (zie button 4)
+Na 4 x klikken wordt de kleur van de button zwart (zie button 5)
+Na 5 x klikken verdwijnt de button. De button is dus niet meer aanwezig in de DOM!

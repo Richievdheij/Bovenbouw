@@ -1,0 +1,17 @@
+body {
+   justify-content: center;
+   display: flex;
+}
+
+#container {
+   width: 50%;
+   align-items: center;
+   background-color: gray;
+}
+
+button {
+   width: 122px;
+   height: 80px;
+   justify-content: center;
+   margin: 10px;
+}
