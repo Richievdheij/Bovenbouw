@@ -1,0 +1,30 @@
+body {
+    padding: 10px;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.navmenu {
+    border: 2px solid;
+    display: flex;
+    border-bottom: 0px;
+    padding-left: 16px;
+    text-align: center;
+}
+
+.navmenu li a {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    display: flex;
+}

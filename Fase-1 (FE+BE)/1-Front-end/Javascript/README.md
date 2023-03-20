@@ -157,3 +157,47 @@ Zodra je de pagina laadt, zullen alle personen op de pagina weergegeven worden z
 - Haal nu de lijst op het scherm leeg
 - Laat daarna ALLEEN DE PERSONEN DIE OUDER ZIJN dan de ingevulde waarde op het scherm getoond worden
 Je zult dus de lijst moeten filteren op de waarde van de leeftijd, en vervolgens het resultaat opnieuw op het scherm moeten tonen (kijk hiervoor naar DOM Manipulatie).
+
+# Javascript / Eindopdracht JS - Gamepicker
+Je gaat de website die je hebt gemaakt bij de “Eindopdracht HTML&CSS – Gamecatalog” iets uitbreiden. Je gaat functionaliteit geven aan het onderdeel “Gamepicker”. 
+Het idee achter de gamepicker is dat je alle informatie over 34 spellen in een Javascript array aangeleverd krijgt. Jij genereert via deze array, dynamisch, een totaaloverzicht op jouw pagina, met de nuttige informatie zichtbaar. 
+De gebruiker moet de pagina kunnen gebruiken om bepaalde filters toe te passen op de lijst van spellen, om de lijst te verkleinen naar voorkeuren. Vervolgen zijn spellen te selecteren en worden in een “winkelmandje” geplaatst. Wanneer de gebruiker klaar is met het maken van een selectie, kiest hij voor “bereken prijs”, verdwijnt de complete lijst en wordt het winkelmandje getoond. In het winkelmandje is een berekende totaalprijs zichtbaar. 
+Functionele eisen: 
+Je kunt op de weergave met het totaaloverzicht:
+* Een totaaloverzicht zien van de aangeleverde spellen. Je ziet ten minste:
+    * De titel
+    * De prijs
+    * Het genre
+    * De rating
+* Meerdere spellen aanklikken om toe te voegen aan het winkelmandje
+    * Je klikt op een knop of icoon bij het spel. 
+    * Je krijgt bevestiging dat het spel toeevoegd is aan het winkelmandje
+* 3 verschillende filters toepassen om minder spellen zichtbaar te maken
+    * prijs lager dan “X” (X is een bepaalde prijs, bijvoorbeeld 30 euro)
+    * Filter op genre (selecteer een genre uit een dropdown) – Alleen spellen die dit genre hebben worden getoond
+    * rating lager dan “X” (X is een bepaalde rating, bijvoorbeeld 4)
+* Een knop “Bereken prijs” selecteren
+    * Je krijgt nu een nieuw overzicht te zien van je winkelmandje met toegevoegde spellen.
+    * Het totaaloverzicht van alle (34) spellen is niet meer zichtbaar
+ 
+Je kunt op de weergave met het winkelmandje:
+* Een overzicht zien van alle aan het winkelmandje toegevoegde spellen
+* Een totaalprijs zien van alle spellen de je hebt geslecteerd
+* Een toegevoegd spel verwijderen
+    * De prijs wordt na het verwijderen opnieuw berekend
+Technische eisen
+* Je pagina volgt de stijl uit het wireframe hieronder (je voegt hier zelf nog het genre en de rating aan toe op een logische plek)
+* Je gebruikt correcte JS code
+* Je gebruikt de juiste programming principes
+    * DRY
+    * Single responsibility
+    * Modulariteit
+    * Code first
+* Je code is netjes en logisch uitgelijnd
+* Je gebruikt logische namen voor je functies en variables
+* De overzichten (totaal en winkelmand) wordt dynamisch opgebouwd via Javascript
+* Je gebruikt 1 functie om de prijs te berekenen EN te herbereken
+* Je maakt correct gebruik van scoping
+* Je mag de pagina opbouwen met geschreven HTML, alleen de overzichten (regels met spellen en prijs etc) zijn dynamisch. 
+* Je maakt gebruik van 2 divs die je maakt in je HTML, deze kun je met JS zichtbaar en onzichtbaar maken om te wisselen tussen totaaloverzicht en winkelmandje scherm.
+
