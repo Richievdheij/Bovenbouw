@@ -108,6 +108,22 @@ Na 3 x klikken wordt de kleur van de button blauw (zie button 4)
 Na 4 x klikken wordt de kleur van de button zwart (zie button 5)
 Na 5 x klikken verdwijnt de button. De button is dus niet meer aanwezig in de DOM!
 
+# Javascript / Lab 4 - Kleuren buttons
+
+Voeg via een JavaScript applicatie de HTML code toe aan de pagina (dynamisch dus). Het enige wat je als HTML in de pagina mag hebben is een container waarin je de HTML gaat toevoegen, bijvoorbeeld dit:
+
+<body>
+      <div id="container"></div>
+      <script src="buttons.js"></script>
+ </body>
+
+ De applicatie voldoet aan de volgende eisen:
+
+- Maak het ontwerp exact na
+- Per rij zijn er 5 buttons aanwezig
+- Het aantal buttons kun je in de JS code opgeven als variabele, bijvoorbeeld: 10, 15, 20, 25, ... In dit geval zijn er 30 buttons aanwezig
+- Elke keer als je op een groene button klikt wordt de kleur rood
+
 # Javascript / Lab 4 - Zelf de kleuren kunnen instellen
 Misschien heb je dit bij opdracht 2 al zo opgelost... Maar de uitbreiding/aanpassing die je moet maken op basis van opdracht 2 is het volgende:
 
@@ -116,3 +132,17 @@ Misschien heb je dit bij opdracht 2 al zo opgelost... Maar de uitbreiding/aanpas
  
 Bijvoorbeeld bij opdracht 2 zijn de kleuren als volgt: groen, rood, paars, blauw en zwart. Je moet ook de volgende instelling kunnen doen: groen, rood en zwart.
 Zorg ervoor dat je met minimale aanpassingen in de JS code dit voor elkaar krijgt.
+
+# Javascript / Lab 5 - Persoonsregister
+Je maakt een uitwerking met HTML (en CSS) en JavaScript om gegevens van een persoon inzichtelijk weer te geven op het scherm. 
+
+Je krijgt een bestand aangeleverd (opdracht1_bijlage.json) met daarin de gegevens van 1 persoon. 
+
+De volgende gegevens zijn belangrijk voor de applicatie: 
+
+- Voornaam
+- Achternaam
+- Nationaliteit
+- Leeftijd
+- Gewicht
+- Maak een JavaScriptje wat met deze gegevens (te vinden in opdracht1_bijlage.json) aan de slag gaat. Gebruik DOM Manipulatie om de gegevens op het scherm te tonen. 
