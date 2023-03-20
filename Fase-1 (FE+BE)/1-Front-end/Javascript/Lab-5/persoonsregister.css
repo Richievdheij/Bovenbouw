@@ -1,21 +1,6 @@
-body {
-   justify-content: center;
-   display: flex;
-}
-
-#container {
-   width: 50%;
-   align-items: center;
-   background-color: gray;
-}
-
-button {
-   width: 122px;
-   height: 80px;
-   justify-content: center;
-   margin: 10px;
-}
-
-.hidden {
-   visibility: hidden;
- }
+#gegevens {
+   background-color: #f9f9f9;
+   border: 1px solid #ddd;
+   padding: 20px;
+   margin-bottom: 20px;
+ } 

@@ -1,8 +1,13 @@
-# Javascript / Lab 4 - Zelf de kleuren kunnen instellen
-Misschien heb je dit bij opdracht 2 al zo opgelost... Maar de uitbreiding/aanpassing die je moet maken op basis van opdracht 2 is het volgende:
+# Javascript / Lab 5 - Persoonsregister
+Je maakt een uitwerking met HTML (en CSS) en JavaScript om gegevens van een persoon inzichtelijk weer te geven op het scherm. 
 
-- je moet zelf in code kunnen aangeven welke kleuren de buttons worden (de startkleur blijft voor alle buttons groen)
-- de laatste kleur is altijd zwart en klik je op een zwarte button dan verdwijnt de button uit de DOM.
- 
-Bijvoorbeeld bij opdracht 2 zijn de kleuren als volgt: groen, rood, paars, blauw en zwart. Je moet ook de volgende instelling kunnen doen: groen, rood en zwart.
-Zorg ervoor dat je met minimale aanpassingen in de JS code dit voor elkaar krijgt.
+Je krijgt een bestand aangeleverd (opdracht1_bijlage.json) met daarin de gegevens van 1 persoon. 
+
+De volgende gegevens zijn belangrijk voor de applicatie: 
+
+- Voornaam
+- Achternaam
+- Nationaliteit
+- Leeftijd
+- Gewicht
+- Maak een JavaScriptje wat met deze gegevens (te vinden in opdracht1_bijlage.json) aan de slag gaat. Gebruik DOM Manipulatie om de gegevens op het scherm te tonen. 

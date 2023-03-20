@@ -1,38 +1,22 @@
-// Maak een variabele aan om het aantal knoppen per rij op te slaan:
-const buttonsPerRow = 5;
+// Haal de gegevens op uit het JSON-bestand
+const persoon = {
+  "voornaam": "Piet",
+  "achternaam": "Heijn",
+  "nationaliteit": "Nederlandse",
+  "leeftijd": 47,
+  "gewicht": 86
+};
 
-// Maak een variabele aan om het totale aantal knoppen te bepalen:
-const totalButtons = 30;
+// Zoek de HTML-elementen op basis van hun ID
+const voornaamElement = document.getElementById('voornaam');
+const achternaamElement = document.getElementById('achternaam');
+const nationaliteitElement = document.getElementById('nationaliteit');
+const leeftijdElement = document.getElementById('leeftijd');
+const gewichtElement = document.getElementById('gewicht');
 
-// Maak een variabele aan om de kleur van de knoppen bij te houden:
-let buttonColor = "green";
-
-// Maak een for loop aan om de kleur van de knoppen te veranderen wanneer erop wordt geklikt:
-function changeColor() {
-const buttonColor = this.style.backgroundColor;
-
-  if (buttonColor === "green") {
-    this.style.backgroundColor = "red";
-  } else if (buttonColor === "red") {
-    this.style.backgroundColor = "black";
-  } else {
-    this.style.visibility = "hidden";
-  }
-}
-
-// Maak een loop aan om de knoppen te maken en toe te voegen aan de container div:
-const container = document.getElementById("container");
-
-for (let i = 1; i <= totalButtons; i++) {
-  const button = document.createElement("button");
-  button.innerHTML = i;
-  button.style.backgroundColor = buttonColor;
-  button.addEventListener("click", changeColor);
-  container.appendChild(button);
-
-  // Voeg een linebreak toe na buttonsPerRow knoppen
-  if (i % buttonsPerRow === 0) {
-    const br = document.createElement("br");
-    container.appendChild(br);
-  }
-}
+// Vul de HTML-elementen met de gegevens van de persoon
+voornaamElement.innerText = persoon.voornaam;
+achternaamElement.innerText = persoon.achternaam;
+nationaliteitElement.innerText = persoon.nationaliteit;
+leeftijdElement.innerText = persoon.leeftijd;
+gewichtElement.innerText = persoon.gewicht;
