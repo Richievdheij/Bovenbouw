@@ -7,6 +7,23 @@ const persoon = {
   "gewicht": 86
 };
 
+// Haal de gegevens op uit het JSON-bestand
+const persoon2 = {
+  "voornaam": "Masud",
+  "achternaam": "Mohammed",
+  "nationaliteit": "Iraans",
+  "leeftijd": 37,
+  "gewicht": 79
+};
+const persoon = [
+{voornaam: 'Piet', 'Masud'},
+{achternaam: 'Heijn', 'Mohammed'},
+{nationaliteit: 'Nederlandse', 'Iraans'},
+{leeftijd: '47', '37'},
+{gewicht: '86', '79'}
+];
+
+
 // Zoek de HTML-elementen op basis van hun ID
 const voornaamElement = document.getElementById('voornaam');
 const achternaamElement = document.getElementById('achternaam');
