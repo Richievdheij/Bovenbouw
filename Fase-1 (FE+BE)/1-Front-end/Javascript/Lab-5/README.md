@@ -22,4 +22,3 @@ Zodra je de pagina laadt, zullen alle personen op de pagina weergegeven worden z
 - Haal nu de lijst op het scherm leeg
 - Laat daarna ALLEEN DE PERSONEN DIE OUDER ZIJN dan de ingevulde waarde op het scherm getoond worden
 Je zult dus de lijst moeten filteren op de waarde van de leeftijd, en vervolgens het resultaat opnieuw op het scherm moeten tonen (kijk hiervoor naar DOM Manipulatie).
-
