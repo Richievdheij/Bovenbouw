@@ -32,3 +32,17 @@ Let op: de getallen die je gebruikt om de berekeningen te doen moeten voor ieder
 1. Maak een PHP applicatie die met een for loopje de tafel van 6 laat zien.
 2. Zorg er nu voor dat de for loop in een functie staat die de waarde 6 mee krijgt als parameter.
 3. Maak een array met de waardes 3, 5, 8 & 12 en loop hier doorheen met een foreach en laat zo voor ieder cijfer de tafel zien.
+
+# L2F1BELP1O1 - Eindopdracht - Goedemorgen!
+Tijdens deze opdracht ga je een dynamische web pagina ontwikkelen waarvan de content en achtergrond zich afhankelijk van tijdstip verandert. Hierbij maak je gebruik van HTML, CSS en PHP.
+
+Functionele eisen:
+- Tussen 06:00 en 12:00 wordt de bezoeker gegroet met de tekst goede morgen en veranderd de achtergrond naar morning.png.
+- Tussen 12:00 en 18:00 wordt de bezoeker gegroet met de tekst goede middag en veranderd de achtergrond naar afternoon.png.
+- Tussen 18:00 en 00:00 wordt de bezoeker gegroet met de tekst goede avond en veranderd de achtergrond naar evening.png.
+- Tussen 00:00 en 06:00 wordt de bezoeker gegroet met de tekst goede nacht en veranderd de achtergrond naar night.png.
+- Het huidige tijdstip wordt aan de bezoeker getoond.
+
+De web pagina bestaat uit correct HTML en CSS.
+Door gebruik te maken van PHP wordt de content en stijl van de pagina beinvloed.
+Door gebruik te maken van de PHP functie date() of de DateTime class wordt het tijdstip bepaald.
