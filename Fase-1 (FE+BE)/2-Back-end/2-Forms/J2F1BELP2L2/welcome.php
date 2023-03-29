@@ -2,22 +2,25 @@
 <html>
 <head>
 	<title>Welkom</title>
-  <style>
+  <style>`
+  
   form {
     margin: 50px auto;
-    width: 400px;
+    width: 500px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     font-family: Arial, sans-serif;
-  }
+  }`
+
   label {
     display: block;
     margin-bottom: 10px;
     font-size: 18px;
     font-weight: bold;
   }
+
   input[type="text"], input[type="email"] {
     width: 100%;
     padding: 10px;
@@ -26,7 +29,8 @@
     box-sizing: border-box;
     font-size: 16px;
     margin-bottom: 20px;
-  }
+  }`
+
   input[type="submit"] {
     background-color: #ec0707;
     color: white;
@@ -38,23 +42,23 @@
     cursor: pointer;
     transition: 0.3s;
   }
+
   input[type="submit"]:hover {
     background-color: #7a1616;
-  }
+  }`
+
   </style>
 </head>
 <body>
-	<?php
-		if(isset($_GET['name']) && isset($_GET['email'])){
-			$name = $_GET['name'];
-			$email = $_GET['email'];
-			echo "<h1>De ingevulde gegevens zijn:</h1>";
-			echo "<p>Naam: ".$name."</p>";
-			echo "<p>Emailadres: ".$email."</p>";
-		}
-		else{
-			echo "<h1>Geen gegevens ontvangen</h1>";
-		}
-	?>
+  <form>
+    <h1>De ingevulde gegevens zijn: <?php echo $_POST["name"]; ?></h1>
+    <label for="name">Naam:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <input type="submit" value="Verstuur">
+  </form>
 </body>
 </html>
