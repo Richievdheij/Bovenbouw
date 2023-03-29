@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Welkom</title>
-  <style>`
+  <style>
   
   form {
     margin: 50px auto;
@@ -12,7 +12,7 @@
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     font-family: Arial, sans-serif;
-  }`
+  }
 
   label {
     display: block;
@@ -29,7 +29,7 @@
     box-sizing: border-box;
     font-size: 16px;
     margin-bottom: 20px;
-  }`
+  }
 
   input[type="submit"] {
     background-color: #ec0707;
@@ -45,7 +45,7 @@
 
   input[type="submit"]:hover {
     background-color: #7a1616;
-  }`
+  }
 
   </style>
 </head>
