@@ -1,5 +1,28 @@
 /* Navbar */
-
+.navbar {
+    display: flex;
+    text-decoration: none;
+    background-color: #831111;
+    list-style-type: none;
+    margin: 0;
+    padding: 1;
+    border: 1px solid;
+  }
+  
+  .navbar li a {
+      display: block;
+      color: #000000;
+      text-align: center;
+      padding: 20px;
+      text-decoration: none;
+  }
+  
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+  }
+  
 
 
 /* Footer */
