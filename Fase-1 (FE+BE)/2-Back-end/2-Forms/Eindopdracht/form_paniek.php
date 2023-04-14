@@ -11,7 +11,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $vraag7 = $_POST["vraag8"];
 
   // plaats de uitgelezen formuliergegevens in een grappige tekst
-  echo "Laten we eens kijken naar jouw antwoorden: <br>";
   echo "Je zou graag $vraag1 willen kunnen, maar helaas, dat gaat je nooit lukken.<br>";
   echo "Met $vraag2 kun je goed opschieten? Dat is onwaarschijnlijk.<br>";
   echo "$vraag3 is je favoriete getal? Serieus? Dat is het ergste antwoord dat we ooit hebben gehoord.<br>";
@@ -19,6 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   echo "Je beste persoonlijke eigenschap is $vraag5? Dat is een grapje, toch?<br>";
   echo "Je slechtste persoonlijke eigenschap is $vraag6? Dat hadden we al wel gedacht.<br>";
   echo "Het ergste dat je kan overkomen is $vraag7? Maak je geen zorgen, dat gaat zeker gebeuren.<br>";
+  echo "Het ergste dat je kan overkomen is $vraag8? Maak je geen zorgen, dat gaat zeker gebeuren.<br>";
 }
 
 ?>
