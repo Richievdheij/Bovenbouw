@@ -1,0 +1,18 @@
+/* Navbar */
+
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+  }
+
+  .footer a {
+    color: #666;
+  }
+
+  .footer a:hover {
+    color: #000;
+  }

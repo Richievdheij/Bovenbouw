@@ -9,13 +9,15 @@
 <body>
 
 	<!-- laad hier via php je header in (vanuit je includes map) -->
-
+  <?php include("includes/header.php"); ?>
 
 	<!-- laad hier via php de juiste contentpagina in (vanuit de pages map) in. Welke geselecteerd moet worden kun je uit de URL halen (URL_Params).-->
-
+  <?php include('onderwerp1.php'); ?>
+  <?php include('onderwerp2.php'); ?>
+  <?php include('onderwerp3.php'); ?>
 	
 	<!-- laad hier via php je footer in (vanuit je includes map)-->
-
+  <?php include('footer.php'); ?>
 
 </body>
 </html>
