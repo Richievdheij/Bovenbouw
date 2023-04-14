@@ -16,10 +16,10 @@ om te bepalen welke inhoud er ingeladen moet worden in je html
     <header>
         <nav>
             <ul class="navbar">
-                <li><a href="index.php?content=onderwerp">Onderwerp</a></li>
-                <li><a href="index.php?content=onderwerp1">Onderwerp 1</a></li>
-                <li><a href="index.php?content=onderwerp2">Onderwerp 2</a></li>
-                <li><a href="index.php?content=onderwerp3">Onderwerp 3</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="pages/onderwerp1.php">Vrijetijdbesteding</a></li>
+                <li><a href="pages/onderwerp2.php">COD</a></li>
+                <li><a href="pages/onderwerp3.php">Fortnite</a></li>
             </ul>
         </nav>
     </header>
