@@ -18,8 +18,9 @@ $image = "C:\Users\Richie van der Heij\Documents\Github\Bovenbouw\Fase-1 (FE+BE)
     <title>Onderwerp 2</title>
 </head>
 <body>
-    <h1>Deze pagina gaat over onderwerp 2</h1>
-    <p>Lorem ipsum dolor sit amet co nsectetur adipisicing elit. Quisquam, quod.</p>
-    <img src="" alt="random foto"> 
+    <?php require('onderwerp2.php'); ?>
+    <h1><?php echo . $title; ?></h1>
+    <p><?php echo . $description; ?></p>
+    <div><?php echo . $image; ?></div>
 </body>
 </html>
