@@ -52,18 +52,6 @@
       if(empty($vraag7t) || !is_string($vraag7t)){
         $errors[] = "Vraag 7 is onjuist ingevuld.";
       }
-
-      if(count($errors) == 0){
-        //Formulier correct ingevuld, voer hier verdere acties uit
-        echo "Bedankt voor het invullen van het formulier!";
-      }else{
-        // Formulier onjuist ingevuld, toon foutmeldingen in label
-        echo "<label class='error'>";
-        foreach($errors as $error){
-          echo $error . "<br>";
-        }
-        echo "</label>";
-      }
     }
     ?>
 
