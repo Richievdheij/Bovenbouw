@@ -14,50 +14,26 @@
     include 'includes/header.php';
 
     // Validate form submission
-    if($_SERVER['REQUEST_METHOD'] == 'POST'){
-      $vraag1t = isset($_POST["vraag1t"]) ? trim(htmlspecialchars(stripslashes($_POST["vraag1t"]))) : "";
-      $vraag2t = isset($_POST["vraag2t"]) ? trim(htmlspecialchars(stripslashes($_POST["vraag2t"]))) : "";
-      $vraag3t = isset($_POST["vraag3t"]) ? trim(htmlspecialchars(stripslashes($_POST["vraag3t"]))) : "";
-      $vraag4t = isset($_POST["vraag4t"]) ? trim(htmlspecialchars(stripslashes($_POST["vraag4t"]))) : "";
-      $vraag5t = isset($_POST["vraag5t"]) ? trim(htmlspecialchars(stripslashes($_POST["vraag5t"]))) : "";
-      $vraag6t = isset($_POST["vraag6t"]) ? trim(htmlspecialchars(stripslashes($_POST["vraag6t"]))) : "";
-      $vraag7t = isset($_POST["vraag7t"]) ? trim(htmlspecialchars(stripslashes($_POST["vraag7t"]))) : "";
-      $vraag8t = isset($_POST["vraag8t"]) ? trim(htmlspecialchars(stripslashes($_POST["vraag8t"]))) : "";
-
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+      $questions = array("vraag1t", "vraag2t", "vraag3t", "vraag4t", "vraag5t", "vraag6t", "vraag7t", "vraag8t");
       $errors = array();
-
-      if(empty($vraag1t) || !is_string($vraag1t)){
-        $errors[] = "Vraag 1 is onjuist ingevuld.";
+  
+      foreach ($questions as $question) {
+          $answer = filter_input(INPUT_POST, $question, FILTER_SANITIZE_STRING);
+          switch ($question) {
+              case "vraag3t":
+                  if (empty($answer) || !is_numeric($answer)) {
+                      $errors[] = "Vraag 3 is onjuist ingevuld.";
+                  }
+                  break;
+              default:
+                  if (empty($answer) || !is_string($answer)) {
+                      $errors[] = "Vraag " . substr($question, -1) . " is onjuist ingevuld.";
+                  }
+                  break;
+          }
       }
-
-      if(empty($vraag2t) || !is_string($vraag2t)){
-        $errors[] = "Vraag 2 is onjuist ingevuld.";
-      }
-
-      if(empty($vraag3t) || !is_string($vraag3t)){
-        $errors[] = "Vraag 3 is onjuist ingevuld.";
-      }
-
-      if(empty($vraag4t) || !is_string($vraag4t)){
-        $errors[] = "Vraag 4 is onjuist ingevuld.";
-      }
-
-      if(empty($vraag5t) || !is_string($vraag5t)){
-        $errors[] = "Vraag 5 is onjuist ingevuld.";
-      }
-
-      if(empty($vraag6t) || !is_string($vraag6t)){
-        $errors[] = "Vraag 6 is onjuist ingevuld.";
-      }
-
-      if(empty($vraag7t) || !is_string($vraag7t)){
-        $errors[] = "Vraag 7 is onjuist ingevuld.";
-      }
-
-      if(empty($vraag8t) || !is_string($vraag8t)){
-        $errors[] = "Vraag 8 is onjuist ingevuld.";
-      }
-    }
+  }
     ?>
 
     <p>

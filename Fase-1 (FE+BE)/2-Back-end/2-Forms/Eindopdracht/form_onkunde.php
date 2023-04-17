@@ -11,7 +11,7 @@
   <div class="form">
     <?php
     // Header
-    include 'includes/header.php'; 
+    include 'includes/header.php';
 
     // Validate form submission
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
@@ -22,7 +22,6 @@
       $vraag5t = isset($_POST["vraag5t"]) ? trim(htmlspecialchars(stripslashes($_POST["vraag5t"]))) : "";
       $vraag6t = isset($_POST["vraag6t"]) ? trim(htmlspecialchars(stripslashes($_POST["vraag6t"]))) : "";
       $vraag7t = isset($_POST["vraag7t"]) ? trim(htmlspecialchars(stripslashes($_POST["vraag7t"]))) : "";
-      $vraag8t = isset($_POST["vraag8t"]) ? trim(htmlspecialchars(stripslashes($_POST["vraag8t"]))) : "";
 
       $errors = array();
 
@@ -54,8 +53,16 @@
         $errors[] = "Vraag 7 is onjuist ingevuld.";
       }
 
-      if(empty($vraag8t) || !is_string($vraag8t)){
-        $errors[] = "Vraag 8 is onjuist ingevuld.";
+      if(count($errors) == 0){
+        //Formulier correct ingevuld, voer hier verdere acties uit
+        echo "Bedankt voor het invullen van het formulier!";
+      }else{
+        // Formulier onjuist ingevuld, toon foutmeldingen in label
+        echo "<label class='error'>";
+        foreach($errors as $error){
+          echo $error . "<br>";
+        }
+        echo "</label>";
       }
     }
     ?>
