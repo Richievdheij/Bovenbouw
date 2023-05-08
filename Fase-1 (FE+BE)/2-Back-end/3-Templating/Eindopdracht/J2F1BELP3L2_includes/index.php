@@ -19,7 +19,17 @@
 	<!-- laad hier via php de juiste contentpagina in (vanuit de pages map) in. Welke geselecteerd moet worden kun je uit de URL halen (URL_Params).-->
   <main>
     <section>
-      
+      <article>
+
+        <?php
+          if (isset($_GET['content'])) {
+            include("pages/onderwerp1" . $_GET['content'] . ".php");
+          } else {
+            include("pages/home.php");
+          }
+        ?>
+
+      </article>
     </section>
   </main>
 
