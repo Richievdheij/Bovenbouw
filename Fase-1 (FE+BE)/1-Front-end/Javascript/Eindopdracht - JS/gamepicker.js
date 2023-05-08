@@ -42,7 +42,7 @@ var games = [
         "rating": 3
     },
     {
-        "title": "COD®: Modern Warfare® II | Warzone™ 2.0",
+        "title": "COD ®: Modern Warfare® II | Warzone™ 2.0",
         "price": 19.99,
         "genre": "FPS",
         "rating": 3,
