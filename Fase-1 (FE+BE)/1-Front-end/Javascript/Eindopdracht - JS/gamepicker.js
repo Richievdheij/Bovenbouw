@@ -88,6 +88,7 @@ var games = [
        "price": 29.99,
        "genre": "Simulation",
        "rating": 3
+   }
    {
        "title": "Football Manager 2023",
        "price": 59.99,
