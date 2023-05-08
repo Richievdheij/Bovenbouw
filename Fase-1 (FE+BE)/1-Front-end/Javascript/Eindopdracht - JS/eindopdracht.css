@@ -40,6 +40,12 @@ main {
     display: flex;
 }
 
+.catalog-menu {
+    border: 2px solid;
+    padding: 10px;
+    display: flex;
+}
+
 .ratings {
     width: 30%;
     float: right;
@@ -94,4 +100,25 @@ img {
 .recensiesmenu {
     border: 2px solid;
     padding: 10px;
+}
+
+#catalog-btn {
+    margin: 10px;
+    border-radius: 10px;
+}
+/* Put the ul li in a row from top to bottom*/
+.catalog-menu ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    margin: 3px;
+    border: 2px solid;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.catalog-menu ul li h2 {
+    margin: 0;
+    font-size: 16px;
 }
