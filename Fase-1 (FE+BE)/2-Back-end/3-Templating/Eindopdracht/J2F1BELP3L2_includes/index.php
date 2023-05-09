@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Lab 2 - Includes en require</title>
+  <title>Eindopdracht</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -21,13 +21,18 @@
     <section>
       <article>
 
-        <?php
-          if (isset($_GET['content'])) {
-            include("pages/onderwerp1" . $_GET['content'] . ".php");
-          } else {
-            include("pages/home.php");
-          }
-        ?>
+      <?php
+        $page = $_GET['index.php'];
+        if ($page == "onderwerp1") {
+          include("pages/onderwerp1.php");
+        } elseif ($page == "onderwerp2") {
+          include("pages/onderwerp2.php");
+        } elseif ($page == "onderwerp3") {
+          include("pages/onderwerp3.php");
+        } else {
+          echo "Selecteer een onderwerp";
+        }
+      ?>
 
       </article>
     </section>

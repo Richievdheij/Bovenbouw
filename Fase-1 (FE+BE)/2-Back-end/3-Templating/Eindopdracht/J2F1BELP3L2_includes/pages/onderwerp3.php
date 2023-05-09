@@ -5,18 +5,12 @@ Het doel van het spel is om te overleven en de laatste speler of het laatste tea
 Fortnite biedt ook veel cosmetische items die spelers kunnen kopen om hun personages en uitrusting aan te passen. Het spel wordt ook regelmatig bijgewerkt met nieuwe inhoud, zoals wapens, skins, kaartupdates en meer.
 Het succes van Fortnite heeft ook geleid tot een breed scala aan merchandise, waaronder kleding, speelgoed en accessoires. Fortnite heeft ook verschillende e-sporttoernooien georganiseerd, waaronder de Fortnite World Cup, waarbij spelers een kans hebben om enorme geldprijzen te winnen.
 Fortnite heeft ook kritiek gekregen vanwege het verslavende karakter van het spel en het feit dat het geweld bevat. Ondanks deze kritiek blijft het spel immens populair en heeft het een enorme impact gehad op de videogame-industrie en popcultuur.";
-$image = "C:\Users\Richie van der Heij\Documents\Github\Bovenbouw\Fase-1 (FE+BE)\2-Back-end\3-Templating\Eindopdracht\J2F1BELP3L2_includes\images\fortnitepic.jpg";
+$image = "Eindopdracht\J2F1BELP3L2_includes\images\fortnitepic.jpg";
 ?>
 
 <!-- jouw HTML met de inhoud over onderwerp 3 komt hier... -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onderwerp 3</title>
-</head>
 <body>
     <?php require('onderwerp3.php'); ?>
     <h1><?php echo . $title; ?></h1>
@@ -24,3 +18,4 @@ $image = "C:\Users\Richie van der Heij\Documents\Github\Bovenbouw\Fase-1 (FE+BE)
     <div><?php echo . $image; ?></div>
 </body>
 </html>
+
