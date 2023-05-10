@@ -1,0 +1,2 @@
+Wat is OOP?
+- OOP is een manier is om de 'echte wereld' te vertalen naar code.
