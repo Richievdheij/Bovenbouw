@@ -8,9 +8,9 @@ om te bepalen welke inhoud er ingeladen moet worden in je html
         <nav>
             <ul class="navbar">
                 <li><a href="index.php">Home</a></li>
-                <li><a href="pages/onderwerp1.php?page=een">Vrijetijdbesteding</a></li>
-                <li><a href="pages/onderwerp2.php?page=twee">COD</a></li>
-                <li><a href="pages/onderwerp3.php?page=drie">Fortnite</a></li>
+                <li><a href="index.php?page=een">Vrijetijdbesteding</a></li>
+                <li><a href="index.php?page=twee">COD</a></li>
+                <li><a href="index.php?page=drie">Fortnite</a></li>
             </ul>
         </nav>
     </header>

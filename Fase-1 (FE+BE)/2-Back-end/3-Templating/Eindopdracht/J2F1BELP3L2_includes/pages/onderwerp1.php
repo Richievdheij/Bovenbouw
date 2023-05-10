@@ -11,12 +11,16 @@ $image1 = "Bovenbouw/Fase-1 (FE+BE)/2-Back-end/3-Templating/Eindopdracht/J2F1BEL
 <!-- jouw HTML met de inhoud over onderwerp 1 komt hier... -->
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+  <link rel="stylesheet" href="../css/style.css">
+  </head>
 <body>
-    <?php require('onderwerp1.php'); ?>
+    <?php include('../includes/header.php'); ?>
     <h1><?php echo $title1; ?></h1>
     <p><?php echo $description1; ?></p>
     <div>
       <img src="<?php echo $image1; ?>" alt="Vrijetijdbesteding">
     </div>
+    <?php include('../includes/footer.php'); ?>
 </body>
 </html>
