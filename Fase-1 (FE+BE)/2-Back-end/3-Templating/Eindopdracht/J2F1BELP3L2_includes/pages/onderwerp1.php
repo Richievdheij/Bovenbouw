@@ -11,12 +11,6 @@ $image1 = "Bovenbouw/Fase-1 (FE+BE)/2-Back-end/3-Templating/Eindopdracht/J2F1BEL
 <!-- jouw HTML met de inhoud over onderwerp 1 komt hier... -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onderwerp 1</title>
-</head>
 <body>
     <?php require('onderwerp1.php'); ?>
     <h1><?php echo $title1; ?></h1>

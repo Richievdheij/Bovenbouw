@@ -39,14 +39,22 @@ $image = "Bovenbouw/Fase-1 (FE+BE)/2-Back-end/3-Templating/Eindopdracht/J2F1BELP
 
     <!-- Include via php je onderwerp 1, onderwerp2 en onderwerp 3 met een if statement -->
       <?php
+      
       $page = $_GET['page'] ?? '';
+      print($page);
 
-      if ($page === 'pages/onderwerp1') {
-        include('pages/onderwerp1.php');
-      } elseif ($page === 'pages/onderwerp2') {
-        include('pages/onderwerp2.php');
-      } elseif ($page === 'pages/onderwerp3') {
-        include('pages/onderwerp3.php');
+      if ($page === 'een') {
+        print($page);
+  
+        //include('pages/onderwerp1.php');
+      } elseif ($page === 'twee') {
+        print($page);
+
+        //include('pages/onderwerp2.php');
+      } elseif ($page === 'drie') {
+        print($page);
+
+        //include('pages/onderwerp3.php');
       }
       ?>
 
