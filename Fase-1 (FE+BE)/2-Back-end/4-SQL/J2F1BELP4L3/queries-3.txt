@@ -1,0 +1,13 @@
+Maak query's op de database met de juiste SQL statements: 
+
+Voeg in de tabel animal een nieuw dier toe met de volgende gegevens: type = hond, speed en defense = 6 en loyalty en owner krijgen de waarde 0. Met welke query kun je het nieuwe dier toevoegen?
+Met welke query kun je zien dat het dier is toegevoegd?
+Wijzig de speed naar 7 en de defense naar 5 van de hond die je bij vraag 1 hebt toegevoegd. Met welke query kun je dit doen?
+Met welke query kun je zien dat de gegevens bij vraag 3 zijn gewijzigd in de database?
+Wijzig alle waarden van de hond die je hebt toegevoegd naar 0. Met welke query kun je dit doen?
+Met welke query kun je zien dat de gegevens bij vraag 6 zijn gewijzigd in de database?
+Verwijder de hond uit de tabel animal. Met welke query kun je dit doen?
+Met welke query kun je zien dat de gegevens bij vraag 7 zijn verwijderd in de database?
+Voeg 2 honden toe in de tabel animal waarbij voor beide honden alle velden op 0 staan. Met welke query kun je dit doen? Controleer ook of de 2 honden zijn toegevoegd.
+Wijzig bij deze 2 honden de waarden speed en defense naar 6. Met welke query kun je dit doen? Controleer ook of de gegevens bij de 2 honden zijn toegevoegd.
+Verwijder de 2 honden uit de tabel animal. Met welke query kun je dit doen? Controleer ook of beide honden zijn verwijderd.
