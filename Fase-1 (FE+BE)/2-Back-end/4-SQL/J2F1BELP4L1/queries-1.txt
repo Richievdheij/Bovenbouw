@@ -1,0 +1,29 @@
+Verkrijg antwoord op de onderstaande vragen.
+
+SELECT *
+
+Met welke query haal je alle helden op uit de database?
+Met welke query haal je alle personen op uit de database?
+Hoeveel personen zijn NPC’s?
+Met welke query haal je alle opdrachten (taken) op uit de database?
+Hoeveel dieren zijn er in RubyQuest?
+Met welke query haal je alle wezens op uit de database?
+Met welke query laat je alle personen zien gesorteerd op naam (ascending)?
+Met welke query laat je alle steden zien gesorteerd op naam (descending)?
+Hoeveel steden zijn er aanwezig?
+ 
+
+SELECT [column], [column]
+
+Met welke query haal je alle namen van bescherming op uit de database?
+Met welke query haal je alle namen en aanvalskracht van wapens op uit de database?
+Met welke query haal je alle namen en gezondheid van alle wezens op uit de database?
+ 
+
+SELECT WHERE
+
+Met welke query kan je alleen de schapen laten zien die er in RubyQuest te vinden zijn?
+Met welke query kan je zien hoeveel schapen er in RubyQuest te vinden zijn?
+Hoeveel zeeslangen zijn er te vinden in RubyQuest?
+Welke persoon heeft id 7?
+Met welke 2 query’s kan je nagaan of de persoon uit vraag 4 een held of een NPC is?

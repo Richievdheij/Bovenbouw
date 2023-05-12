@@ -1,0 +1,72 @@
+DISTINCT
+
+Met welke query kun je laten zien welke verschillende dieren er bestaan?
+Met welke query kun je laten zien welke profession er zijn bij de NPC’s?
+ 
+
+AND, OR and NOT
+
+Met welke query kun je de creatures laten zien die voldoen aan ‘Killer Bee’ of ‘Orc’?
+Met welke query kun je de dieren laten zien die voldoen aan snelheid 6 en verdediging 5?
+Met welke query kun je alle dieren laten zien behalve de schapen?
+Met welke query kun je het aantal dieren laten zien die voldoen aan ‘Wolf’ of ‘Bear’ of ‘Eagle’
+Met welke query kun je de personen laten zien waarvoor geldt attack, defense en agility voor alle drie de waarde gelijk aan 10?
+Met welke query kun je de steden laten zien die vallen in regio 1 of 2?
+Met welke query kun je alle hero’s laten zien met intelligence anders dan 30 of 90?
+ 
+
+MIN and MAX
+
+Met welke query kun je zien welke minimale snelheid de dieren hebben?
+Met welke query kun je zien wat de snelheid is van het snelste dier?
+Met welke query kun je laten zien wat de minimale attack van een wapen is?
+Met welke query kun je laten zien hoeveel het duurste wapen kost?
+ 
+
+IN
+
+Met welke query kun je de creatures laten zien die voldoen aan ‘Killer Bee’ of ‘Orc’?
+Met welke query kun je het aantal dieren laten zien gesorteerd op alfabet die voldoen aan ‘Wolf’ of ‘Bear’ of ‘Eagle’
+Met welke query kun je alle creatures laten zien behalve de ‘Killer Bee’ en de ‘Orc’?
+Met welke query kun je alle namen van de steden laten zien die vallen in de regio South Groval of Nort Groval?
+Met welke query kun je vraag 4 sorteren op alfabet?
+Met welke query kun je bepalen hoeveel steden er vallen binnen de region South Groval of Nort Groval?
+ 
+
+BETWEEN and SQL operators
+
+Met welke query kun je de wapens laten zien met een prijs van 100 – 1000?
+Met welke query kun je de wapens laten zien met een attack van 300 – 600?
+Met welke query kun je het aantal dieren zien die een defense hebben van 7 – 9?
+Met welke query kun je de personen laten zien die meer dan 1800 goud hebben?
+Met welke query kun je de personen laten zien die meer dan 1850 goud hebben?
+Met welke query kun je de personen laten zien die 1850 of meer goud hebben?
+Met welke query kun je de wapens laten zien die minder dan 300 kosten?
+ 
+
+LIKE
+
+Met welke query kan je alle personen laten zien de beginnen met de letter B?
+Met welke query kan je alle dieren laten zien waar de letter a in zit?
+Met welke query kan je alle dieren laten zien waar achter de letter e een letter a in zit?
+Met welke query kan je alle wapens laten zien die eindigen op de letter d?
+ 
+
+TOP, LIMIT or ROWNUM
+
+Met welke query kun je de eerste 10 personen laten zien
+Met welke query kun je de 5 duurste wapens laten zien?
+Met welke query kun je de beste 3 wapens laten zien die een attack hebben van 700 – 900?
+* Combineren / Joins – optioneel
+
+Met welke query vraag je de namen van de wezens op die gewond zijn?
+Bij welke opdracht(en) krijg je geen geld?
+Hoeveel steden zijn er in de regio Breach?
+Met welke query kan je nagaan welke dieren zijn gevangen als huisdier?
+Hoeveel opdrachten geven je meer dan 3000 ervaringspunten?
+Met welke query kan je nagaan welke opdracht meer geld als ervaring uitgeeft?
+Hoe heet het wapen van Bowser? 
+Met welke query kun je bepalen welke tijger het snelst is?
+In welke stad vind je de persoon Mukovo?
+Welk persoon heeft meer dan 1 huisdier en welke huisdieren zijn dat?
+Met welke query kom je erachter in welke stad de baas van de regio South Groval zit?
