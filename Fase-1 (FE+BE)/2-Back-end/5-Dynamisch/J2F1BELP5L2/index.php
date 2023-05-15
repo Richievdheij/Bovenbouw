@@ -75,7 +75,21 @@ if ($page === 'een') {
 
 
 	<!-- Laat hier de content die je op hebt gehaald uit de database zien op de pagina. -->
+  <main>
+    <section>
+      <article>
 
+
+    <h1><?php echo $title; ?></h1>
+    <p><?php echo $description; ?></p>
+    <div>
+      <img src="<?php echo $image; ?>" alt="Roblox">
+    </div>
+
+  
+      </article>
+    </section>
+  </main>
 
 	<!-- laad hier via php je footer in (vanuit je includes map)-->
 <section>
