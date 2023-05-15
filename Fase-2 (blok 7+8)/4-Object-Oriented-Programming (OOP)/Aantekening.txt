@@ -1,2 +1,38 @@
 Wat is OOP?
 - OOP is een manier is om de 'echte wereld' te vertalen naar code.
+
+OOP gaat om abstractie, om om te gaan met compleximaliteit, etc..
+
+Composition: How do we structure our code?
+- Complex object is composed of other objects:
+
+        Motherboard
+             |
+Processor - RAM - SSD Disk
+
+public class Motherboard {
+    public Processor processor;
+    public RAM memory;
+    public SSD disk;
+    
+    The complex object can use the objects to perform an operation:
+
+    public void StartUp() {
+        processor.TurnOn();
+        memory.TurnOn();
+        disk.TurnOn();
+    }
+
+    public void StartProgram(string name) {
+        Data data  =  disk.GetProgram(name);
+        Program program =  processor.LoadProgram(data, memory);
+        program.Execute();
+    }
+
+
+    public Motherboard(Processor processor, RAM memory, SSD disk) {
+        this.processor = processor;
+        this.memory = memory;
+        this.disk = disk;
+    }
+}
