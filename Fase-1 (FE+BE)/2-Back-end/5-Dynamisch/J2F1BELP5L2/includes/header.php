@@ -7,10 +7,10 @@ om te bepalen welke inhoud er ingeladen moet worden in je html
     <header>
         <nav>
             <ul class="navbar">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="index.php?page=een">Vrijetijdbesteding</a></li>
-                <li><a href="index.php?page=twee">COD</a></li>
-                <li><a href="index.php?page=drie">Fortnite</a></li>
+                <li><a href="index.php?page=1">Home</a></li>
+                <li><a href="index.php?page=1">Vrijetijdbesteding</a></li>
+                <li><a href="index.php?page=2">COD</a></li>
+                <li><a href="index.php?page=3">Fortnite</a></li>
             </ul>
         </nav>
     </header>

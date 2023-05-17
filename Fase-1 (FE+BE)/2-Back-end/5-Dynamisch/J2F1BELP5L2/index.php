@@ -8,38 +8,39 @@ try {
   $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
   // set the PDO error mode to exception
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$id = $_GET['page'];
+$stmt = $conn->prepare("SELECT * FROM onderwerpen WHERE id = $id;");
+$results = $stmt->execute();
+$html = "";
 
-  // prepare sql and bind parameters
-  $stmt = $conn->prepare("SELECT * FROM onderwerpen;");
-  $results = $stmt->execute();
-  $html = "";
-  while($row = $stmt->fetch()){
+while ($row = $stmt->fetch()) {
     $html .= FormatCard($row['name'], $row['description'], $row['image']);
-  }
+}
   echo "New records created successfully";
 } catch(PDOException $e) {
   echo "Error: " . $e->getMessage();
 }
-echo $html;
+//echo $html;
 $conn = null;
 ?>
 
 <?php
 function FormatCard(string $title, string $description, string $imagePath): string {
   return '
+    <div class="card">
+      <h1>' . $title . '</h1>
+      <p>' . $description . '</p>
+      <div>
+        <img src="' . $imagePath . '" alt="Roblox">
+      </div>
+    </div><br>  
+  ';
 
-  
-  <article>
-    <h1>' . $title . '</h1>
-    <p>' . $description§ . '</p>
-    <div>
-      <img src="' . $imagePath . '" alt="Roblox">
-    </div>
-  </article><br>';
 }
 ?>
 
 <?php 
+
 $title = "Roblox";
 $description = "Roblox is een immens populair online gamingplatform dat spelers van alle leeftijden uitnodigt om hun creativiteit te uiten en virtuele werelden te verkennen. Het platform, dat in 2006 werd gelanceerd, heeft de gamingindustrie veroverd met zijn unieke combinatie van gebruikersgeneratie-inhoud, sociale interactie en diverse gameplay-ervaringen.
 In Roblox kunnen spelers hun eigen spellen maken en delen met de community. Met behulp van de intuïtieve ontwikkeltools kunnen ze hun verbeelding de vrije loop laten en alles bouwen wat ze maar kunnen bedenken, van eenvoudige obstakelbanen tot complexe simulaties en multiplayer-avonturen. Dit heeft geleid tot een enorm scala aan spellen, elk met een unieke gameplay en stijl, waardoor spelers nooit een tekort hebben aan nieuwe ervaringen om van te genieten.
@@ -106,13 +107,13 @@ if ($page === 'een') {
       <article>
 
 
-    <h1><?php echo $title; ?></h1>
+    <!--<h1><?php echo $title; ?></h1>
     <p><?php echo $description; ?></p>
     <div>
       <img src="<?php echo $image; ?>" alt="Roblox">
-    </div>
+    </div>-->
 
-  
+    <?php echo $html?>
       </article>
     </section>
   </main>
