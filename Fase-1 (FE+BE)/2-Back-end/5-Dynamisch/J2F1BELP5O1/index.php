@@ -61,5 +61,10 @@ try {
 </div>
 <!-- Geef footer gegevens via PHP -->
 <footer> <?php echo "&copy; [Richie van der Heij] 2023" ?> </footer>
+<<<<<<< HEAD
+=======
+
+<footer>&copy; [Richie van der Heij] 2023</footer>
+>>>>>>> b6712cb9f65c3e93bbcbc8e0d17fa371ac16129e
 </body>
 </html>

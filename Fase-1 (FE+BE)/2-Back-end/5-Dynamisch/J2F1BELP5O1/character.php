@@ -28,6 +28,7 @@
             $stmt->execute();
             $character = $stmt->fetch(PDO::FETCH_ASSOC);
 
+<<<<<<< HEAD
 
     ?>
 </div>
@@ -61,6 +62,42 @@ if ($character) {
         <div style="clear: both"></div>
     </div>
 </div>
+=======
+            // Controleren of het personage is gevonden
+
+            
+            
+            if ($character) {
+                ?>
+                <header>
+                <a href="index.php"><i class="fas fa-arrow-left"></i> Terug</a>
+                <h1><?php echo $character['name']; ?></h1>
+                </header>
+                <div id="container">
+                <div class="character-details">
+                    <img src="vormgeving/resources/images/<?php echo $character['avatar']; ?>" alt="<?php echo $character['name']; ?> Avatar">
+                    <h2><?php echo $character['name']; ?></h2>
+                    <p><strong><class="fa-li"><i class="fas fa-heart"></i></strong> <?php echo $character['health']; ?></p>
+                    <p><strong><class="fa-li"><i class="fas fa-fist-raised"></i></strong> <?php echo $character['attack']; ?></p>
+                    <p><strong><class="fa-li"><i class="fas fa-shield-alt"></i></strong> <?php echo $character['defense']; ?></p>
+                    <p><strong>Weapon:</strong> <?php echo $character['weapon']; ?></p>
+                    <p><strong>Armor:</strong> <?php echo $character['armor']; ?></p>
+                </div>
+                </div>
+                <?php
+            } else {
+                echo "<p>Character not found</p>";
+            }
+        } else {
+            echo "<p>No character id specified</p>";
+        }
+    } catch (PDOException $e) {
+        echo "Database Error: " . $e->getMessage();
+        die();
+    }
+    ?>
+</div>
+>>>>>>> b6712cb9f65c3e93bbcbc8e0d17fa371ac16129e
 <footer> 
     <?php echo "&copy; [Richie van der Heij] 2023" ?>
 </footer>
