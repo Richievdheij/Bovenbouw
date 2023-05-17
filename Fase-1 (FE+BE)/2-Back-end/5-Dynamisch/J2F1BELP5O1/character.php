@@ -1,16 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Character Details</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="resources/css/style.css" rel="stylesheet"/>
+    <link href="vormgeving/resources/css/style.css" rel="stylesheet"/>
 </head>
 <body>
-<header>
-    <h1>Character Details</h1>
-</header>
-<div id="container">
+
     <?php
     // Verbinding maken met de database
     $host = 'localhost';
@@ -22,7 +17,7 @@
         $db = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        // Controleren of er een personage-id is opgegeven in de querystring
+        // Controlen van character details op basis van id
         if (isset($_GET['id'])) {
             $characterId = $_GET['id'];
 
@@ -34,22 +29,32 @@
             $character = $stmt->fetch(PDO::FETCH_ASSOC);
 
             // Controleren of het personage is gevonden
+
+            
+            
             if ($character) {
                 ?>
+                <header>
+                <a href="index.php"><i class="fas fa-arrow-left"></i> Terug</a>
+                <h1><?php echo $character['name']; ?></h1>
+                </header>
+                <div id="container">
                 <div class="character-details">
-                    <img src="resources/images/<?php echo $character['avatar']; ?>" alt="<?php echo $character['name']; ?> Avatar">
+                    <img src="vormgeving/resources/images/<?php echo $character['avatar']; ?>" alt="<?php echo $character['name']; ?> Avatar">
                     <h2><?php echo $character['name']; ?></h2>
-                    <p><strong>Levenskracht:</strong> <?php echo $character['health']; ?></p>
-                    <p><strong>Aanvalskracht:</strong> <?php echo $character['attack']; ?></p>
-                    <p><strong>Verdediging:</strong> <?php echo $character['defense']; ?></p>
-                    <p><strong>Beschrijving:</strong> <?php echo $character['description']; ?></p>
+                    <p><strong><class="fa-li"><i class="fas fa-heart"></i></strong> <?php echo $character['health']; ?></p>
+                    <p><strong><class="fa-li"><i class="fas fa-fist-raised"></i></strong> <?php echo $character['attack']; ?></p>
+                    <p><strong><class="fa-li"><i class="fas fa-shield-alt"></i></strong> <?php echo $character['defense']; ?></p>
+                    <p><strong>Weapon:</strong> <?php echo $character['weapon']; ?></p>
+                    <p><strong>Armor:</strong> <?php echo $character['armor']; ?></p>
+                </div>
                 </div>
                 <?php
             } else {
-                echo "<p>Personage niet gevonden.</p>";
+                echo "<p>Character not found</p>";
             }
         } else {
-            echo "<p>Ongeldige aanvraag.</p>";
+            echo "<p>No character id specified</p>";
         }
     } catch (PDOException $e) {
         echo "Database Error: " . $e->getMessage();
@@ -57,8 +62,8 @@
     }
     ?>
 </div>
-<footer>
-    <p>&copy; Richie van der Heij [2023]</p>
+<footer> 
+    <?php echo "&copy; [Richie van der Heij] 2023" ?>
 </footer>
 </body>
 </html>
