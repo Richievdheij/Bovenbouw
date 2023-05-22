@@ -193,55 +193,63 @@ const games = [
     },
 ];
 
-const catalogBtn = document.getElementById('catalog-btn');
-const gameListContainer = document.getElementById('game-list');
-const cartContainer = document.getElementById('cart');
-let cartItems = [];
-
-function generateGameList() {
+  const catalogBtn = document.getElementById('catalog-btn');
+  const gameListContainer = document.getElementById('game-list');
+  const cartContainer = document.getElementById('cart');
+  const cartItemsElement = document.getElementById('cart-items');
+  const totalPriceElement = document.getElementById('total-price');
+  let cartItems = [];
+  
+  function generateGameList() {
     gameListContainer.innerHTML = '';
     games.forEach(game => {
-        const gameElement = document.createElement('div');
-        gameElement.classList.add('game');
-        gameElement.innerHTML = `
-            <h3>${game.title}</h3>
-            <p>Prijs: €${game.price.toFixed(2)}</p>
-            <p>Genre: ${game.genre}</p>
-            <p>Rating: ${game.rating}</p>
-            <button class="add-to-cart-btn" onclick="addToCart(${games.indexOf(game)})">Toevoegen aan winkelmandje</button>
-        `;
-        gameListContainer.appendChild(gameElement);
+      const gameElement = document.createElement('div');
+      gameElement.classList.add('game');
+      gameElement.innerHTML = `
+        <h3>${game.title}</h3>
+        <p>Prijs: €${game.price.toFixed(2)}</p>
+        <p>Genre: ${game.genre}</p>
+        <p>Rating: ${game.rating}</p>
+        <button class="add-to-cart-btn" onclick="addToCart(${games.indexOf(game)})">Toevoegen aan winkelmandje</button>
+      `;
+      gameListContainer.appendChild(gameElement);
     });
-}
-
-function addToCart(index) {
+  }
+  
+  function addToCart(index) {
     const selectedGame = games[index];
     cartItems.push(selectedGame);
+    updateCart();
     alert(`Het spel "${selectedGame.title}" is toegevoegd aan het winkelmandje.`);
-}
-
-function showCart() {
-    cartContainer.innerHTML = '';
-    cartItems.forEach(game => {
-        const cartItem = document.createElement('div');
-        cartItem.classList.add('cart-item');
-        cartItem.innerHTML = `
-            <h3>${game.title}</h3>
-            <p>Prijs: €${game.price.toFixed(2)}</p>
-            <p>Genre: ${game.genre}</p>
-            <p>Rating: ${game.rating}</p>
-            <button class="remove-from-cart-btn" onclick="removeFromCart(${cartItems.indexOf(game)})">Verwijderen</button>
-        `;
-        cartContainer.appendChild(cartItem);
-    });
-    cartContainer.style.display = 'block';
-}
-
-function removeFromCart(index) {
+  }
+  
+  function removeFromCart(index) {
     cartItems.splice(index, 1);
-    showCart();
-}
-
-catalogBtn.addEventListener('click', showCart);
-
-generateGameList();
+    updateCart();
+  }
+  
+  function updateCart() {
+    cartItemsElement.innerHTML = '';
+    let totalPrice = 0;
+    cartItems.forEach(game => {
+      const cartItem = document.createElement('div');
+      cartItem.classList.add('cart-item');
+      cartItem.innerHTML = `
+        <h3>${game.title}</h3>
+        <p>Prijs: €${game.price.toFixed(2)}</p>
+        <p>Genre: ${game.genre}</p>
+        <p>Rating: ${game.rating}</p>
+        <button class="remove-from-cart-btn" onclick="removeFromCart(${cartItems.indexOf(game)})">Verwijderen</button>
+      `;
+      cartItemsElement.appendChild(cartItem);
+      totalPrice += game.price;
+    });
+    totalPriceElement.textContent = `Totaalprijs: €${totalPrice.toFixed(2)}`;
+  }
+  
+  catalogBtn.addEventListener('click', () => {
+    cartContainer.style.display = 'block';
+  });
+  
+  generateGameList();
+  
