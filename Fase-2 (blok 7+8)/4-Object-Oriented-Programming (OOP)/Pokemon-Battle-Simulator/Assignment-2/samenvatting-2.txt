@@ -1,0 +1,33 @@
+# What is a class?:
+
+Een class is een blauwdruk of sjabloon die wordt gebruikt om objecten te maken.
+Het definieert de eigenschappen en gedragingen die een object zal hebben.
+Een class kan als een sjabloon worden beschouwd waarmee meerdere objecten van dezelfde soort kunnen worden gemaakt.
+
+
+# What is an object?:
+
+Een object is een exemplaar of een specifieke instantie van een class.
+Het is een concreet item dat geheugenruimte inneemt en de eigenschappen en gedragingen heeft die zijn gedefinieerd in de bijbehorende class.
+Elk object kan unieke waarden hebben voor de eigenschappen die het definieert.
+
+
+# What is a constructor?:
+
+Een constructor is een speciale method in een class die wordt gebruikt om een nieuw object van die class te initialiseren.
+Het wordt meestal gebruikt om waarden toe te wijzen aan de eigenschappen (fielden) van het object.
+Een constructor wordt automatisch aangeroepen wanneer een nieuw object van een class wordt gemaakt.
+
+
+# What is a field?:
+
+Een field is een variabele die is gedeclareerd in een class.
+Het wordt gebruikt om gegevens op te slaan die specifiek zijn voor elk object van die class.
+fielden bevatten de staat of de gegevens die het gedrag van een object kunnen beïnvloeden.
+
+
+# What is a method?:
+
+Een method is een block code dat is gedefinieerd in een class en gedragingen invoert die kunnen worden uitgevoerd op een object van die class.
+Het vertegenwoordigt acties of bewerkingen die kunnen worden uitgevoerd op een object.
+methodn kunnen inputparameters accepteren, berekeningen uitvoeren en waarden terug sturen.
