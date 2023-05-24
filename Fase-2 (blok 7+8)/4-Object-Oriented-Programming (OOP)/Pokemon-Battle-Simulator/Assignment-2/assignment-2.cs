@@ -1,26 +1,32 @@
 using System;
 
-class Charmander {
+class Charmander
+{
     private string name;
     private string strength;
     private string weakness;
 
-    public Charmander(string name, string strength, string weakness) {
+    public Charmander(string name, string strength, string weakness)
+    {
         this.name = name;
         this.strength = strength;
         this.weakness = weakness;
     }
 
-    public void BattleCry() {
+    public void BattleCry()
+    {
         Console.WriteLine(name + "!");
     }
 }
 
-class Program {
-    static void Main(string[] args) {
+class Program
+{
+    static void Main(string[] args)
+    {
         bool quitGame = false;
         Charmander charmander = null;
-        while (!quitGame) {
+        while (!quitGame)
+        {
             Console.WriteLine("1. Start the game.");
             Console.WriteLine("2. Give a name to a Charmander.");
             Console.WriteLine("3. Charmander does its battle cry for ten times.");
