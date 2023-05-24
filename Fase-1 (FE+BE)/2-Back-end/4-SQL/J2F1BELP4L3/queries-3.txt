@@ -1,13 +1,26 @@
 Maak query's op de database met de juiste SQL statements: 
 
 Voeg in de tabel animal een nieuw dier toe met de volgende gegevens: type = hond, speed en defense = 6 en loyalty en owner krijgen de waarde 0. Met welke query kun je het nieuwe dier toevoegen?
+INSERT INTO animal (type, speed, defense, loyalty, owner)
+VALUES ('hond', 6, 6, 0, 0);
 Met welke query kun je zien dat het dier is toegevoegd?
+SELECT * FROM animal WHERE type = 'hond';
 Wijzig de speed naar 7 en de defense naar 5 van de hond die je bij vraag 1 hebt toegevoegd. Met welke query kun je dit doen?
+UPDATE animal SET speed = 7, defense = 5 WHERE type = 'hond';
 Met welke query kun je zien dat de gegevens bij vraag 3 zijn gewijzigd in de database?
+SELECT * FROM animal WHERE type = 'hond';
 Wijzig alle waarden van de hond die je hebt toegevoegd naar 0. Met welke query kun je dit doen?
+UPDATE animal SET speed = 0, defense = 0, loyalty = 0, owner = 0 WHERE type = 'hond';
 Met welke query kun je zien dat de gegevens bij vraag 6 zijn gewijzigd in de database?
+SELECT * FROM animal WHERE type = 'hond';
 Verwijder de hond uit de tabel animal. Met welke query kun je dit doen?
+DELETE FROM animal WHERE type = 'hond';
 Met welke query kun je zien dat de gegevens bij vraag 7 zijn verwijderd in de database?
+SELECT * FROM animal WHERE type = 'hond';
 Voeg 2 honden toe in de tabel animal waarbij voor beide honden alle velden op 0 staan. Met welke query kun je dit doen? Controleer ook of de 2 honden zijn toegevoegd.
+INSERT INTO animal (type, speed, defense, loyalty, owner)
+VALUES ('hond', 0, 0, 0, 0), ('hond', 0, 0, 0, 0);
 Wijzig bij deze 2 honden de waarden speed en defense naar 6. Met welke query kun je dit doen? Controleer ook of de gegevens bij de 2 honden zijn toegevoegd.
+SELECT * FROM animal WHERE type = 'hond';
 Verwijder de 2 honden uit de tabel animal. Met welke query kun je dit doen? Controleer ook of beide honden zijn verwijderd.
+UPDATE animal SET speed = 6, defense = 6 WHERE type = 'hond';
