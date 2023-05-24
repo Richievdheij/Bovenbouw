@@ -23,6 +23,40 @@
 
     <main>
         <section class="catalog-menu">
+            <div class="filters">
+                <label for="price-filter">Prijs:</label>
+                <select id="price-filter">
+                    <option value="all">Alle prijzen</option>
+                    <option value="10">Minder dan €10</option>
+                    <option value="20">Minder dan €20</option>
+                    <option value="30">Minder dan €30</option>
+                </select>
+
+                <label for="genre-filter">Genre:</label>
+                <select id="genre-filter">
+                    <option value="all">Alle genres</option>
+                    <option value="action">Actie</option>
+                    <option value="rpg">RPG</option>
+                    <option value="mmo">FPS</option>
+                    <option value="strategy">Strategie</option>
+                    <option value="simulation">Simulation</option>
+                    <option value="sandbox">Sandbox</option>
+                    <option value="sport">Sport</option>
+                    <option value="moba">MOBA</option>
+                    <option value="shooter">Looter-Shooter</option>
+                </select>
+
+                <label for="rating-filter">Rating:</label>
+                <select id="rating-filter">
+                    <option value="all">Alle ratings</option>
+                    <option value="5">5 sterren</option>
+                    <option value="4">4 sterren</option>
+                    <option value="3">3 sterren</option>
+                    <option value="2">2 sterren</option>
+                    <option value="1">1 ster</option>
+                </select>
+            </div>
+
             <div id="game-list"></div>
             <div id="cart">
                 <h2>Winkelmandje</h2>
@@ -54,7 +88,7 @@
                 <div class="systeem5">
                     <p>DirectX:</p>
                 </div>
-                
+
                 <div class="systeem6">
                     <p>Opslagruimte:</p>
                 </div>
@@ -66,26 +100,26 @@
                 <div class="recensie1">
                     <h1>Recensies</h1>
                     <p>
-                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consequuntur dolor alias? Similique, voluptatem qui." <br>
-                    - IGN
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consequuntur dolor alias? Similique, voluptatem qui." <br>
+                        - IGN
                     </p>
                 </div>
                 <div class="recensie2">
                     <p>
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias unde itaque quos veritatis voluptatum omnis?" <br>
-                    - Rock, Paper, Scissors
+                        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias unde itaque quos veritatis voluptatum omnis?" <br>
+                        - Rock, Paper, Scissors
                     </p>
                 </div>
                 <div class="recensie3">
                     <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos consectetur neque odit laboriosam dicta autem!" <br>
-                    - Microsoft
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos consectetur neque odit laboriosam dicta autem!" <br>
+                        - Microsoft
                     </p>
                 </div>
             </div>
         </section>
     </main>
-    
+
     <script src="gamepicker.js"></script>
 </body>
 </html>

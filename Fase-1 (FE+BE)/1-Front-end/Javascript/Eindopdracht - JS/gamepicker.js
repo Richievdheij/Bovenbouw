@@ -193,6 +193,44 @@ const games = [
     },
 ];
 
+ // Variabelen voor filters
+ let priceFilter = 0;
+ let genreFilter = '';
+ let ratingFilter = 0;
+ 
+ // Functie om de games te filteren op basis van de geselecteerde filters
+ function applyFilters() {
+   priceFilter = parseFloat(document.getElementById('price-filter').value);
+   genreFilter = document.getElementById('genre-filter').value;
+   ratingFilter = parseInt(document.getElementById('rating-filter').value);
+   generateGameList();
+ }
+ 
+ // Functie om de filters te resetten naar de standaardwaarden
+ function clearFilters() {
+   document.getElementById('price-filter').value = '';
+   document.getElementById('genre-filter').value = '';
+   document.getElementById('rating-filter').value = '';
+   priceFilter = 0;
+   genreFilter = '';
+   ratingFilter = 0;
+   generateGameList();
+ }
+ 
+ // Functie om de games weer te geven op basis van de toegepaste filters
+ function generateGameList() {
+   gameListContainer.innerHTML = '';
+   const filteredGames = games.filter(game => {
+     const meetsPriceFilter = game.price <= priceFilter || priceFilter === 0;
+     const meetsGenreFilter = game.genre === genreFilter || genreFilter === '';
+     const meetsRatingFilter = game.rating <= ratingFilter || ratingFilter === 0;
+     return meetsPriceFilter && meetsGenreFilter && meetsRatingFilter;
+   });
+   filteredGames.forEach(game => {
+     // Code om de games weer te geven
+   });
+ }
+
   const catalogBtn = document.getElementById('catalog-btn');
   const gameListContainer = document.getElementById('game-list');
   const cartContainer = document.getElementById('cart');
@@ -252,4 +290,3 @@ const games = [
   });
   
   generateGameList();
-  
