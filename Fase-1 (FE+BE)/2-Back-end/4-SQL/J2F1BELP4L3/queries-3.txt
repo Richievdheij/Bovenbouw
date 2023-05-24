@@ -20,7 +20,15 @@ SELECT * FROM animal WHERE type = 'hond';
 Voeg 2 honden toe in de tabel animal waarbij voor beide honden alle velden op 0 staan. Met welke query kun je dit doen? Controleer ook of de 2 honden zijn toegevoegd.
 INSERT INTO animal (type, speed, defense, loyalty, owner)
 VALUES ('hond', 0, 0, 0, 0), ('hond', 0, 0, 0, 0);
+
+SELECT * FROM animal WHERE type = 'hond';
+
 Wijzig bij deze 2 honden de waarden speed en defense naar 6. Met welke query kun je dit doen? Controleer ook of de gegevens bij de 2 honden zijn toegevoegd.
 SELECT * FROM animal WHERE type = 'hond';
+
+SELECT * FROM animal WHERE type = 'hond';
+
 Verwijder de 2 honden uit de tabel animal. Met welke query kun je dit doen? Controleer ook of beide honden zijn verwijderd.
-UPDATE animal SET speed = 6, defense = 6 WHERE type = 'hond';
+DELETE FROM animal WHERE type = 'hond';
+
+SELECT * FROM animal WHERE type = 'hond';
