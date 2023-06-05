@@ -1,33 +1,25 @@
-# What is a class?:
+# The assignment contains the following concepts: composition, reference types, and value types.
+# The assignment uses the following keywords: null, List<Pokeball> (with C#) or ArrayList<Pokeball> (with Java).
 
-Een class is een blauwdruk of sjabloon die wordt gebruikt om objecten te maken.
-Het definieert de eigenschappen en gedragingen die een object zal hebben.
-Een class kan als een sjabloon worden beschouwd waarmee meerdere objecten van dezelfde soort kunnen worden gemaakt.
+# Composition:
 
+Composition is het concept waarbij we objecten combineren om complexere structuren te maken, zoals objecten binnen objecten.
+Dit helpt bij het modelleren van real-world scenario's. 
 
-# What is an object?:
+# Reference Types:
 
-Een object is een exemplaar of een specifieke instantie van een class.
-Het is een concreet item dat geheugenruimte inneemt en de eigenschappen en gedragingen heeft die zijn gedefinieerd in de bijbehorende class.
-Elk object kan unieke waarden hebben voor de eigenschappen die het definieert.
+Reference types zijn datatypes die verwijzen naar geheugenlocaties waar de werkelijke waarden zijn opgeslagen. 
+Ze hebben een toegewezen geheugenruimte om de verwijzing naar de waarden op te slaan.
 
+# Value types:
 
-# What is a constructor?:
+Value types slaan daarentegen waarden direct op in de variabele zelf,
+zonder verwijzingen naar geheugenlocaties.
 
-Een constructor is een speciale method in een class die wordt gebruikt om een nieuw object van die class te initialiseren.
-Het wordt meestal gebruikt om waarden toe te wijzen aan de eigenschappen (fielden) van het object.
-Een constructor wordt automatisch aangeroepen wanneer een nieuw object van een class wordt gemaakt.
+# Null:
 
+"Null" wordt gebruikt om aan te geven dat een referentietype geen verwijzing naar een object bevat.
 
-# What is a field?:
-
-Een field is een variabele die is gedeclareerd in een class.
-Het wordt gebruikt om gegevens op te slaan die specifiek zijn voor elk object van die class.
-fielden bevatten de staat of de gegevens die het gedrag van een object kunnen beïnvloeden.
-
-
-# What is a method?:
-
-Een method is een block code dat is gedefinieerd in een class en gedragingen invoert die kunnen worden uitgevoerd op een object van die class.
-Het vertegenwoordigt acties of bewerkingen die kunnen worden uitgevoerd op een object.
-methodn kunnen inputparameters accepteren, berekeningen uitvoeren en waarden terug sturen.
+# List:
+Een "List<Pokeball>" is een datatype in C# dat een geordende verzameling van "Pokeball" objecten opslaat,
+waardoor we flexibiliteit hebben bij het werken met verschillende objecten.
