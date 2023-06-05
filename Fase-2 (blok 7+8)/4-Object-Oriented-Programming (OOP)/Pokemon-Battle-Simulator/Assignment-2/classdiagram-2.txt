@@ -1,0 +1,45 @@
+
++--------------------------------------+
+|               Charmander              |
++--------------------------------------+
+| - name: string                        |
+| - strength: string                    |
+| - weakness: string                    |
++--------------------------------------+
+| + Charmander(name: string,            |
+|   strength: string, weakness: string) |
+| + BattleCry(): void                   |
++--------------------------------------+
+
++--------------------------------------+
+|               Pokeball                |
++--------------------------------------+
+| - charmander: Charmander              |
+| - isOpen: bool                        |
++--------------------------------------+
+| + IsEmpty: bool                       |
+| + IsOpen: bool                        |
+| + Throw(): void                       |
+| + Return(): void                      |
+| + SetCharmander(charmander:           |
+|   Charmander): void                   |
+| + GetCharmander(): Charmander         |
++--------------------------------------+
+
++--------------------------------------+
+|                Trainer                |
++--------------------------------------+
+| - name: string                        |
+| - belt: List<Pokeball>                |
++--------------------------------------+
+| + Trainer(name: string)               |
+| + ThrowPokeball(index: int): void     |
+| + ReturnCharmander(index: int): void  |
+| - BattleCry(): void                   |
++--------------------------------------+
+
++--------------------------------------+
+|               Program                  |
++--------------------------------------+
+| + Main(args: string[]): void          |
++--------------------------------------+

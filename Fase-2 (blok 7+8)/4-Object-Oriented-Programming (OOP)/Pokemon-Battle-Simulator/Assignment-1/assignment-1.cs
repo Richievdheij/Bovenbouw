@@ -69,21 +69,3 @@ public class Program {
         }
     }
 }
-
-+--------------------+
-|   Charmander       |
-+--------------------+
-| - name:     string |
-| - strength: string |
-| - weakness: string |
-+----------------------------------------------------------------+
-| + Charmander(name: string, strength: string, weakness: string) |
-| + BattleCry()                                                  |
-+----------------------------------------------------------------+
-
-+--------------------+
-|  Program           |
-+------------------------+
-| - Main(args: string[]) |
-+------------------------+
-
