@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-
 public class Trainer
 {
     private string name;
@@ -11,12 +8,16 @@ public class Trainer
         this.name = name;
         belt = new List<Pokeball>();
 
-        for (int i = 0; i < 6; i++)
+        // Create two of each Pokemon and add them to the belt
+        for (int i = 0; i < 2; i++)
         {
-            Pokeball pokeball = new Pokeball();
-            Charmander charmander = new Charmander("Charmander" + (i + 1), "fire", "water");
-            pokeball.SetCharmander(charmander);
-            belt.Add(pokeball);
+            belt.Add(new Pokeball());
+            belt.Add(new Pokeball());
+            belt.Add(new Pokeball());
+
+            belt[i].SetPokemon(new Squirtle("Squirtle" + (i + 1)));
+            belt[i + 2].SetPokemon(new Bulbasaur("Bulbasaur" + (i + 1)));
+            belt[i + 4].SetPokemon(new Charmander("Charmander" + (i + 1)));
         }
     }
 
@@ -25,17 +26,7 @@ public class Trainer
         if (index >= 0 && index < belt.Count)
         {
             Pokeball pokeball = belt[index];
-            if (pokeball.IsEmpty)
-            {
-                Console.WriteLine("Trainer " + name + " threw an empty pokeball.");
-            }
-            else
-            {
-                Console.WriteLine("Trainer " + name + " threw a pokeball.");
-                pokeball.Throw();
-                Console.WriteLine("Trainer " + name + " shouts:");
-                BattleCry();
-            }
+            pokeball.Throw();
         }
         else
         {
@@ -43,35 +34,16 @@ public class Trainer
         }
     }
 
-    public void ReturnCharmander(int index)
+    public void ReturnPokemon(int index)
     {
         if (index >= 0 && index < belt.Count)
         {
             Pokeball pokeball = belt[index];
-            if (pokeball.IsEmpty)
-            {
-                Console.WriteLine("Trainer " + name + " returned an empty pokeball.");
-            }
-            else
-            {
-                Console.WriteLine("Trainer " + name + " returned a pokeball.");
-                pokeball.Return();
-            }
+            pokeball.Return();
         }
         else
         {
             Console.WriteLine("Invalid pokeball index.");
-        }
-    }
-
-    private void BattleCry()
-    {
-        foreach (Pokeball pokeball in belt)
-        {
-            if (!pokeball.IsEmpty && pokeball.IsOpen)
-            {
-                pokeball.GetCharmander().BattleCry();
-            }
         }
     }
 }
