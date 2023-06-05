@@ -1,6 +1,6 @@
 using System;
 
-class Charmander {
+public class Charmander {
     private string name;
     private string strength;
     private string weakness;
@@ -16,7 +16,7 @@ class Charmander {
     }
 }
 
-class Program {
+public class Program {
     static void Main(string[] args) {
         bool quitGame = false;
         Charmander charmander = null;
