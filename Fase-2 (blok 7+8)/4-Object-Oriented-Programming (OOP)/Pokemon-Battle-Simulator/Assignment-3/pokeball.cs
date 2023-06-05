@@ -2,12 +2,12 @@ using System;
 
 public class Pokeball
 {
-    private Charmander charmander;
+    private Pokemon pokemon;
     private bool isOpen;
 
     public bool IsEmpty
     {
-        get { return charmander == null; }
+        get { return pokemon == null; }
     }
 
     public bool IsOpen
@@ -17,10 +17,11 @@ public class Pokeball
 
     public void Throw()
     {
-        if (!IsEmpty && !isOpen)
+        if (!IsEmpty && !IsOpen)
         {
             Console.WriteLine("Pokeball thrown!");
             isOpen = true;
+            pokemon.BattleCry();
         }
         else
         {
@@ -30,7 +31,7 @@ public class Pokeball
 
     public void Return()
     {
-        if (!IsEmpty && isOpen)
+        if (!IsEmpty && IsOpen)
         {
             Console.WriteLine("Pokeball returned!");
             isOpen = false;
@@ -41,13 +42,13 @@ public class Pokeball
         }
     }
 
-    public void SetCharmander(Charmander charmander)
+    public void SetPokemon(Pokemon pokemon)
     {
-        this.charmander = charmander;
+        this.pokemon = pokemon;
     }
 
-    public Charmander GetCharmander()
+    public Pokemon GetPokemon()
     {
-        return charmander;
+        return pokemon;
     }
 }

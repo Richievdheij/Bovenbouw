@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+
 public class Trainer
 {
     private string name;
@@ -8,16 +11,25 @@ public class Trainer
         this.name = name;
         belt = new List<Pokeball>();
 
-        // Create two of each Pokemon and add them to the belt
-        for (int i = 0; i < 2; i++)
+        for (int i = 0; i < 6; i++)
         {
-            belt.Add(new Pokeball());
-            belt.Add(new Pokeball());
-            belt.Add(new Pokeball());
-
-            belt[i].SetPokemon(new Squirtle("Squirtle" + (i + 1)));
-            belt[i + 2].SetPokemon(new Bulbasaur("Bulbasaur" + (i + 1)));
-            belt[i + 4].SetPokemon(new Charmander("Charmander" + (i + 1)));
+            Pokeball pokeball = new Pokeball();
+            if (i % 3 == 0)
+            {
+                Squirtle squirtle = new Squirtle("Squirtle " + (i / 3 + 1));
+                pokeball.SetPokemon(squirtle);
+            }
+            else if (i % 3 == 1)
+            {
+                Bulbasaur bulbasaur = new Bulbasaur("Bulbasaur " + (i / 3 + 1));
+                pokeball.SetPokemon(bulbasaur);
+            }
+            else
+            {
+                Charmander charmander = new Charmander("Charmander " + (i / 3 + 1));
+                pokeball.SetPokemon(charmander);
+            }
+            belt.Add(pokeball);
         }
     }
 
@@ -26,7 +38,15 @@ public class Trainer
         if (index >= 0 && index < belt.Count)
         {
             Pokeball pokeball = belt[index];
-            pokeball.Throw();
+            if (pokeball.IsEmpty)
+            {
+                Console.WriteLine("Trainer " + name + " threw an empty pokeball.");
+            }
+            else
+            {
+                Console.WriteLine("Trainer " + name + " threw a pokeball.");
+                pokeball.Throw();
+            }
         }
         else
         {
@@ -39,7 +59,15 @@ public class Trainer
         if (index >= 0 && index < belt.Count)
         {
             Pokeball pokeball = belt[index];
-            pokeball.Return();
+            if (pokeball.IsEmpty)
+            {
+                Console.WriteLine("Trainer " + name + " tried to return an empty pokeball.");
+            }
+            else
+            {
+                Console.WriteLine("Trainer " + name + " returned a pokeball.");
+                pokeball.Return();
+            }
         }
         else
         {
