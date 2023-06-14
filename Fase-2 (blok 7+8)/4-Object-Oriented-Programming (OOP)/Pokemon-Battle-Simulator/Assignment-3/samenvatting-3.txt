@@ -1,1 +1,30 @@
-Add nog weakness toe aan de pokemons + restart button 
+# Inheritance
+
+Inheritance is als het doorgeven van eigenschappen en gedrag van een bestaande classnaar een nieuwe class.
+Dit betekent dat de nieuwe class de kenmerken van de bestaande class overneemt en ook nieuwe kenmerken kan toevoegen. 
+Hierdoor hoeft de nieuwe class niet alles opnieuw te definiëren, maar kan het gebruikmaken van wat al bestaat.
+
+# Polymorphism
+
+Polymorphism betekent dat objecten van verschillende klassen zich op dezelfde manier kunnen gedragen.
+Dit betekent dat je een algemene benadering kunt gebruiken om met verschillende specifieke objecten om te gaan,
+omdat ze gemeenschappelijke eigenschappen en methoden hebben.
+
+# Parent constructor
+
+Een constructor is een speciale methode die wordt gebruikt om een object te initialiseren.
+In overerving kan de nieuwe class de constructor van de bestaande class gebruiken
+om de gemeenschappelijke initialisatie uit te voeren voordat het zijn eigen specifieke initialisatie toevoegt.
+
+# Abstract classes and methods
+
+Een abstract class is een class die niet direct kan worden gemaakt.
+Het dient als een sjabloon voor andere klassen en definieert algemene kenmerken en methods.
+Abstract methods zijn methoden die alleen in de subklassen moeten worden geïmplementeerd. 
+Dit betekent dat elke subclass zijn eigen specifieke implementatie van de abstract method moet geven.
+
+# Extends, super, abstract (class) and abstract (method).
+
+Door overerving, polymorfisme, constructors van de super en abstracte classes en methods te gebruiken,
+kunnen programmeurs efficiënte en flexibele code schrijven. Het helpt bij het hergebruik van code,
+het organiseren van code in modules en het werken met objecten op een algemeen niveau.
