@@ -18,6 +18,7 @@ public class Program
             Console.WriteLine("6. First trainer returns the pokemon.");
             Console.WriteLine("7. Second trainer returns the pokemon.");
             Console.WriteLine("8. Quit the game.");
+            Console.WriteLine("9. Restart the game.");
 
             Console.Write("Enter your choice: ");
             int choice = int.Parse(Console.ReadLine());
@@ -89,11 +90,33 @@ public class Program
                     quitGame = true;
                     Console.WriteLine("Game quit.");
                     break;
+                case 9:
+                    RestartGame(ref trainer1, ref trainer2);
+                    break;
                 default:
                     Console.WriteLine("Invalid choice. Please try again.");
                     break;
             }
             Console.WriteLine();
         }
+    }
+
+    static void RestartGame(ref Trainer trainer1, ref Trainer trainer2)
+    {
+        trainer1 = null;
+        trainer2 = null;
+
+        Console.WriteLine("Game restarted.");
+        Console.Write("Enter a name for the first trainer: ");
+        string trainer1Name = Console.ReadLine();
+        trainer1 = new Trainer(trainer1Name);
+        Console.Write("Enter a name for the second trainer: ");
+        string trainer2Name = Console.ReadLine();
+        trainer2 = new Trainer(trainer2Name);
+
+        Console.WriteLine("Trainer 1: " + trainer1Name);
+        Console.WriteLine("Trainer 2: " + trainer2Name);
+        Console.WriteLine("Let the battle begin!");
+        Console.WriteLine();
     }
 }
