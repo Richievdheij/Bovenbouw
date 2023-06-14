@@ -120,3 +120,75 @@ public class Program
         Console.WriteLine();
     }
 }
+
+// Class diagram
+    +-----------------------+
+    |       Pokemon         |
+    +-----------------------+
+    | - name: string        |
+    | - strength: string    |
+    | - weakness: string    |
+    +-------------------------------------------------------------+
+    | + Pokemon(name: string, strength: string, weakness: string) |
+    | + BattleCry(): void                                         |
+    +-------------------------------------------------------------+
+                ^
+                |
+                |
+    +----------------------+
+    |       Bulbasaur      |
+    +---------------------------+
+    | + Bulbasaur(name: string) |
+    | + BattleCry(): void       |
+    +---------------------------+
+                ^
+                |
+                |
+    +----------------------+
+    |      Charmander      |
+    +----------------------------+
+    | + Charmander(name: string) |
+    | + BattleCry(): void        |
+    +----------------------------+
+                ^
+                |
+                |
+    +----------------------+
+    |       Squirtle       |
+    +--------------------------+
+    | + Squirtle(name: string) |
+    | + BattleCry(): void      |
+    +--------------------------+
+
+             ^
+             |
+             |
+   +----------------------+
+   |       Pokeball       |
+   +----------------------+
+   | - pokemon: Pokemon   |
+   | - isOpen: bool       |
+   +----------------------+
+   | + IsEmpty: bool      |
+   | + IsOpen: bool       |
+   | + Throw(): void      |
+   | + Return(): void     |---------------+
+   | + SetPokemon(pokemon: Pokemon): void |
+   | + GetPokemon(): Pokemon              |
+   +--------------------------------------+
+
+             ^
+             |
+             |
+   +-----------------------------------+
+   |       Trainer                     |
+   +-----------------------------------+
+   | - name: string                    |
+   | - belt: List<Pokeball>            |
+   +-----------------------------------+
+   | + Trainer(name: string)           |
+   | + ThrowPokeball(index: int): void |
+   | + ReturnPokemon(index: int): void |
+   +-----------------------------------+
+
+
