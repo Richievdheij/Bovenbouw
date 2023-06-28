@@ -1,0 +1,14 @@
+# Composition:
+
+Composition is een krachtig ontwerpprincipe waarbij een klasse wordt samengesteld uit andere objecten.
+Hierdoor kan de klasse complexe functionaliteit bereiken door samen te werken met zijn samengestelde objecten.
+Het bevordert modulaire en herbruikbare code doordat sterke relaties tussen objecten worden gecreëerd.
+Met composition kunnen we objecten combineren als bouwstenen om flexibele en uitbreidbare systemen te bouwen.
+
+# Static variables and methods:
+
+Static variabelen en methoden behoren tot de klasse zelf, niet tot specifieke instanties ervan.
+Een static variabele wordt gedeeld door alle instanties van de klasse,
+terwijl een static methode kan worden aangeroepen zonder een instantie van de klasse te maken. 
+Ze bieden een handige manier om gemeenschappelijke gegevens en functionaliteit te delen zonder afhankelijk te zijn van specifieke objecten. 
+Static leden kunnen rechtstreeks worden aangeroepen met de klasse, waardoor ze gemakkelijk toegankelijk zijn.
