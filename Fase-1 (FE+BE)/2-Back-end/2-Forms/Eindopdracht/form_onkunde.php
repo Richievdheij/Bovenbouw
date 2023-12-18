@@ -23,8 +23,9 @@
       $vraag6t = isset($_POST["vraag6t"]) ? trim(htmlspecialchars(stripslashes($_POST["vraag6t"]))) : "";
       $vraag7t = isset($_POST["vraag7t"]) ? trim(htmlspecialchars(stripslashes($_POST["vraag7t"]))) : "";
 
+      // Validate form data
       $errors = array();
-
+      // Check if fields are empty
       if(empty($vraag1t) || !is_string($vraag1t)){
         $errors[] = "Vraag 1 is onjuist ingevuld.";
       }
