@@ -1,0 +1,79 @@
+================= Pokemon Battle Simulator Cheatsheet =================
+
+1. **Organize Code into Separate Files:**
+   - Move each class to its own file (e.g., Pokemon.cs, Trainer.cs, Battle.cs, Arena.cs, Program.cs).
+
+2. **Remove Console.WriteLine() in Class Methods:**
+   - Avoid using Console.WriteLine() in class methods. Instead, return strings and let Battle handle console output.
+
+3. **Use Read-Only Fields Where Appropriate:**
+   - Mark fields as read-only if they don't change after object creation.
+   - Utilize properties with a private set for mutable properties.
+
+4. **Introduce Pokemon Subclasses:**
+   - Create subclasses for different Pokemon types (FirePokemon, WaterPokemon, GrassPokemon) and use polymorphism.
+
+5. **Use Abstract Methods:**
+   - Create an abstract method (e.g., Attack()) in the Pokemon base class to be implemented by subclasses.
+
+6. **Implement the Cheatsheet in Code:**
+
+    ```csharp
+    // Example: Abstract method in Pokemon base class
+    public abstract class Pokemon
+    {
+        // ... (existing code)
+
+        public abstract void Attack();
+    }
+
+    // Example: Subclass implementing the abstract method
+    public class FirePokemon : Pokemon
+    {
+        // ... (existing code)
+
+        public override void Attack()
+        {
+            Console.WriteLine($"{Name} uses Ember!");
+        }
+    }
+    ```
+
+7. **Use Enum for Pokemon Types:**
+   - Replace string-based Pokemon types with an enum.
+
+8. **Correct Visibility Modifiers:**
+   - Adjust visibility modifiers (public, private) for class members and methods.
+
+9. **Limit Pokeballs to Six:**
+   - Add validation to limit the number of Pokemon a trainer can have to six.
+
+10. **Environment Configuration:**
+    - Ensure .NET Core or .NET SDK is installed.
+    - Run `dotnet build` and `dotnet run` commands in the project directory.
+
+11. **Create Class Diagram:**
+    - Utilize a UML diagram tool to create a visual class diagram based on the textual representation.
+
+12. **Check for Errors:**
+    - Regularly check for compilation errors, warnings, and runtime errors.
+
+13. **Build a C# Project:**
+    - Organize your code into a C# project for better maintainability.
+
+14. **Set Main Method:**
+    - Ensure the `Main` method is correctly set as the entry point of the application.
+
+15. **Reset and Display Scoreboard:**
+    - Implement methods in Arena to reset and display the scoreboard.
+
+16. **Enums for Pokemon Types:**
+    - Replace string-based Pokemon types with an enum.
+
+17. **Choose Classes that Can't Be Extended:**
+    - Decide which classes should not be extended by subclasses.
+
+18. **Separate Logic and Presentation Layers:**
+    - Keep logic and presentation layers separate. Let Battle handle console output.
+
+======================= End of Cheatsheet ==========================
