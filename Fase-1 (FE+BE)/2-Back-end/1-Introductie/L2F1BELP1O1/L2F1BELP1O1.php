@@ -21,9 +21,10 @@
 
  <!-- L2F1BELP1O1 - Eindopdracht - Goedemorgen! -->
 <?php
-function getGreeting() {
-  $hour = date("H");
+function getGreeting() { // function declaration
+  $hour = date("H"); // get current hour
 
+  // check current hour and return greeting
   if ($hour >= 6 && $hour < 12) {
     return "Goede morgen!";
   } elseif ($hour >= 12 && $hour < 18) {
@@ -34,10 +35,10 @@ function getGreeting() {
     return "Goede nacht!";
   }
 }
-
+// call function
 function getBackground() {
   $hour = date("H");
-
+// check current hour and return background
   if ($hour >= 6 && $hour < 12) {
     return "morning.png";
   } elseif ($hour >= 12 && $hour < 18) {
